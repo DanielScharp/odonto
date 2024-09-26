@@ -5,134 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
         <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'/>
         <title>Fit Aligner - Mais do que sorrisos, motivos para sorrir</title>
-
-
-        <script type="text/javascript">
-            /* <![CDATA[ */
-            window._wpemojiSettings = {
-                "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/",
-                "ext": ".png",
-                "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/",
-                "svgExt": ".svg",
-                "source": {
-                    "concatemoji": "https:\/\/sejaself.com.br\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.6.2"
-                }
-            };
-            /*! This file is auto-generated */
-            !function(i, n) {
-                var o, s, e;
-                function c(e) {
-                    try {
-                        var t = {
-                            supportTests: e,
-                            timestamp: (new Date).valueOf()
-                        };
-                        sessionStorage.setItem(o, JSON.stringify(t))
-                    } catch (e) {}
-                }
-                function p(e, t, n) {
-                    e.clearRect(0, 0, e.canvas.width, e.canvas.height),
-                    e.fillText(t, 0, 0);
-                    var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data)
-                      , r = (e.clearRect(0, 0, e.canvas.width, e.canvas.height),
-                    e.fillText(n, 0, 0),
-                    new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data));
-                    return t.every(function(e, t) {
-                        return e === r[t]
-                    })
-                }
-                function u(e, t, n) {
-                    switch (t) {
-                    case "flag":
-                        return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");
-                    case "emoji":
-                        return !n(e, "\ud83d\udc26\u200d\u2b1b", "\ud83d\udc26\u200b\u2b1b")
-                    }
-                    return !1
-                }
-                function f(e, t, n) {
-                    var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300,150) : i.createElement("canvas")
-                      , a = r.getContext("2d", {
-                        willReadFrequently: !0
-                    })
-                      , o = (a.textBaseline = "top",
-                    a.font = "600 32px Arial",
-                    {});
-                    return e.forEach(function(e) {
-                        o[e] = t(a, e, n)
-                    }),
-                    o
-                }
-                function t(e) {
-                    var t = i.createElement("script");
-                    t.src = e,
-                    t.defer = !0,
-                    i.head.appendChild(t)
-                }
-                "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports",
-                s = ["flag", "emoji"],
-                n.supports = {
-                    everything: !0,
-                    everythingExceptFlag: !0
-                },
-                e = new Promise(function(e) {
-                    i.addEventListener("DOMContentLoaded", e, {
-                        once: !0
-                    })
-                }
-                ),
-                new Promise(function(t) {
-                    var n = function() {
-                        try {
-                            var e = JSON.parse(sessionStorage.getItem(o));
-                            if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests)
-                                return e.supportTests
-                        } catch (e) {}
-                        return null
-                    }();
-                    if (!n) {
-                        if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob)
-                            try {
-                                var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), p.toString()].join(",") + "));"
-                                  , r = new Blob([e],{
-                                    type: "text/javascript"
-                                })
-                                  , a = new Worker(URL.createObjectURL(r),{
-                                    name: "wpTestEmojiSupports"
-                                });
-                                return void (a.onmessage = function(e) {
-                                    c(n = e.data),
-                                    a.terminate(),
-                                    t(n)
-                                }
-                                )
-                            } catch (e) {}
-                        c(n = f(s, u, p))
-                    }
-                    t(n)
-                }
-                ).then(function(e) {
-                    for (var t in e)
-                        n.supports[t] = e[t],
-                        n.supports.everything = n.supports.everything && n.supports[t],
-                        "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]);
-                    n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag,
-                    n.DOMReady = !1,
-                    n.readyCallback = function() {
-                        n.DOMReady = !0
-                    }
-                }).then(function() {
-                    return e
-                }).then(function() {
-                    var e;
-                    n.supports.everything || (n.readyCallback(),
-                    (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji),
-                    t(e.wpemoji)))
-                }))
-            }((window,
-            document), window._wpemojiSettings);
-            /* ]]> */
-        </script>
         <style id='wp-emoji-styles-inline-css' type='text/css'>
             img.wp-smiley, img.emoji {
                 display: inline !important;
@@ -1179,52 +1051,12 @@
         <script type="text/javascript" src="https://sejaself.com.br/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
         <script type="text/javascript" src="https://sejaself.com.br/wp-content/plugins/modern-events-calendar-lite/assets/js/mec-general-calendar.js?ver=6.6.12" id="mec-general-calendar-script-js"></script>
         <script type="text/javascript" src="https://sejaself.com.br/wp-content/plugins/modern-events-calendar-lite/assets/packages/tooltip/tooltip.js?ver=6.6.12" id="mec-tooltip-script-js"></script>
-        <script type="text/javascript" id="mec-frontend-script-js-extra">
-            /* <![CDATA[ */
-            var mecdata = {
-                "day": "dia",
-                "days": "dias",
-                "hour": "hora",
-                "hours": "horas",
-                "minute": "minuto",
-                "minutes": "minutos",
-                "second": "segundo",
-                "seconds": "segundos",
-                "next": "Pr\u00f3ximo",
-                "prev": "Prev",
-                "elementor_edit_mode": "no",
-                "recapcha_key": "",
-                "ajax_url": "https:\/\/sejaself.com.br\/wp-admin\/admin-ajax.php",
-                "fes_nonce": "ce3efb2fb6",
-                "fes_thankyou_page_time": "2000",
-                "fes_upload_nonce": "9e379175c2",
-                "current_year": "2024",
-                "current_month": "09",
-                "datepicker_format": "yy-mm-dd"
-            };
-            /* ]]> */
-        </script>
+
         <script type="text/javascript" src="https://sejaself.com.br/wp-content/plugins/modern-events-calendar-lite/assets/js/frontend.js?ver=6.6.12" id="mec-frontend-script-js"></script>
         <script type="text/javascript" src="https://sejaself.com.br/wp-content/plugins/modern-events-calendar-lite/assets/js/events.js?ver=6.6.12" id="mec-events-script-js"></script>
         <!-- Snippet do Google Analytics adicionado pelo Site Kit -->
         <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-138866664-3" id="google_gtagjs-js" async></script>
-        <script type="text/javascript" id="google_gtagjs-js-after">
-            /* <![CDATA[ */
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag('set', 'linker', {
-                "domains": ["sejaself.com.br"]
-            });
-            gtag("js", new Date());
-            gtag("set", "developer_id.dZTNiMT", true);
-            gtag("config", "UA-138866664-3", {
-                "anonymize_ip": true
-            });
-            gtag("config", "GT-578KQJ7");
-            /* ]]> */
-        </script>
+
         <!-- Finalizar o snippet do Google Analytics adicionado pelo Site Kit -->
         <link rel="https://api.w.org/" href="https://sejaself.com.br/wp-json/"/>
         <link rel="alternate" title="JSON" type="application/json" href="https://sejaself.com.br/wp-json/wp/v2/pages/285"/>
@@ -1239,23 +1071,7 @@
             root.setAttribute("class", "js");
         </script>
         <meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
-        <!-- Google Tag Manager -->
-        <script>
-            (function(w, d, s, l, i) {
-                w[l] = w[l] || [];
-                w[l].push({
-                    'gtm.start': new Date().getTime(),
-                    event: 'gtm.js'
-                });
-                var f = d.getElementsByTagName(s)[0]
-                  , j = d.createElement(s)
-                  , dl = l != 'dataLayer' ? '&l=' + l : '';
-                j.async = true;
-                j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-                f.parentNode.insertBefore(j, f);
-            }
-            )(window, document, 'script', 'dataLayer', 'GTM-TPP9WFK');
-        </script>
+
         <!-- End Google Tag Manager -->
         <meta name="facebook-domain-verification" content="owmuf75g6ml5ffmxxays84yeh6ckuw"/>
         <link rel="icon" href="https://sejaself.com.br/wp-content/uploads/2022/09/cropped-fav-32x32.png" sizes="32x32"/>
@@ -1377,7 +1193,6 @@
 
             @media only screen and (min-width: 900px) {
                 #banner .cell .vc_column-inner > .wpb_wrapper {
-                    background-image: url(https://sejaself.com.br/wp-content/uploads/2022/09/SELF-SYMBOL-2.svg);
                     background-size: auto 140%;
                     background-position: center 60%;
                     background-repeat: no-repeat;
@@ -1528,12 +1343,8 @@
             }
         </style>
     </head>
-    <body data-rsssl=1 class="home page-template-default page page-id-285 non-logged-in material wpb-js-composer js-comp-ver-6.9.1 vc_responsive elementor-default elementor-kit-924 elementor-page elementor-page-285" data-footer-reveal="false" data-footer-reveal-shadow="none" data-header-format="default" data-body-border="off" data-boxed-style="" data-header-breakpoint="1000" data-dropdown-style="minimal" data-cae="easeOutCubic" data-cad="750" data-megamenu-width="contained" data-aie="none" data-ls="fancybox" data-apte="standard" data-hhun="0" data-fancy-form-rcs="default" data-form-style="default" data-form-submit="regular" data-is="minimal" data-button-style="slightly_rounded_shadow" data-user-account-button="false" data-flex-cols="true" data-col-gap="default" data-header-inherit-rc="false" data-header-search="false" data-animated-anchors="true" data-ajax-transitions="false" data-full-width-header="false" data-slide-out-widget-area="true" data-slide-out-widget-area-style="slide-out-from-right" data-user-set-ocm="off" data-loading-animation="none" data-bg-header="false" data-responsive="1" data-ext-responsive="true" data-ext-padding="90" data-header-resize="1" data-header-color="custom" data-cart="false" data-remove-m-parallax="" data-remove-m-video-bgs="" data-m-animate="0" data-force-header-trans-color="light" data-smooth-scrolling="0" data-permanent-transparent="false">
-        <!-- Google Tag Manager (noscript) -->
-        <noscript>
-            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TPP9WFK" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-        </noscript>
-        <!-- End Google Tag Manager (noscript) -->
+    <body data-rsssl=1 class="home page-template-default page page-id-285 non-logged-in material wpb-js-composer js-comp-ver-6.9.1 vc_responsive elementor-default elementor-kit-924 elementor-page elementor-page-285" data-footer-reveal="false" data-footer-reveal-shadow="none" data-header-format="default" data-body-border="off" data-boxed-data-header-breakpoint="1000" data-dropdown-style="minimal" data-cae="easeOutCubic" data-cad="750" data-megamenu-width="contained" data-aie="none" data-ls="fancybox" data-apte="standard" data-hhun="0" data-fancy-form-rcs="default" data-form-style="default" data-form-submit="regular" data-is="minimal" data-button-style="slightly_rounded_shadow" data-user-account-button="false" data-flex-cols="true" data-col-gap="default" data-header-inherit-rc="false" data-header-search="false" data-animated-anchors="true" data-ajax-transitions="false" data-full-width-header="false" data-slide-out-widget-area="true" data-slide-out-widget-area-style="slide-out-from-right" data-user-set-ocm="off" data-loading-animation="none" data-bg-header="false" data-responsive="1" data-ext-responsive="true" data-ext-padding="90" data-header-resize="1" data-header-color="custom" data-cart="false" data-remove-m-parallax="" data-remove-m-video-bgs="" data-m-animate="0" data-force-header-trans-color="light" data-smooth-scrolling="0" data-permanent-transparent="false">
+
         <script type="text/javascript">
             (function(window, document) {
 
@@ -1630,14 +1441,9 @@
                                                     <span class="menu-title-text">Para pacientes</span>
                                                 </a>
                                             </li>
-                                            <li id="menu-item-981" class="menu-item menu-item-type-post_type menu-item-object-page nectar-regular-menu-item menu-item-981">
-                                                <a href="https://sejaself.com.br/club-self/">
-                                                    <span class="menu-title-text">Club Self</span>
-                                                </a>
-                                            </li>
                                             <li id="menu-item-510" class="menu-item menu-item-type-custom menu-item-object-custom nectar-regular-menu-item menu-item-btn-style-button_extra-color-gradient menu-item-510">
                                                 <a href="https://self.ddo.dental/">
-                                                    <span class="menu-title-text">Área do doutor</span>
+                                                    <span class="menu-title-text">Whatsapp</span>
                                                 </a>
                                             </li>
                                         </ul>
@@ -1836,7 +1642,7 @@
                                                             <div class="vc_col-sm-6 vc_col-lg-6 vc_col-md-6 vc_col-xs-6 wpb_column column_container vc_column_container col child_column no-extra-padding force-desktop-text-align-right inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
                                                                 <div class="vc_column-inner">
                                                                     <div class="wpb_wrapper">
-                                                                        <a class="nectar-button jumbo regular accent-color has-icon  regular-button" style="" href="/ortodontistas" data-color-override="false" data-hover-color-override="false" data-hover-text-color-override="#fff">
+                                                                        <a class="nectar-button jumbo regular accent-color has-icon  regular-button" href="/ortodontistas" data-color-override="false" data-hover-color-override="false" data-hover-text-color-override="#fff">
                                                                             <span>Sou ortodontista</span>
                                                                             <i class="fa fa-chevron-right"></i>
                                                                         </a>
@@ -2062,7 +1868,7 @@
                                                             <div class="row-bg"></div>
                                                         </div>
                                                         <div class="row_col_wrap_12_inner col span_12  left">
-                                                            <div style="" class="vc_col-sm-6 wpb_column column_container vc_column_container col child_column padding-5-percent inherit_tablet inherit_phone " data-using-bg="true" data-border-radius="10px" data-overlay-color="true" data-padding-pos="all" data-has-bg-color="true" data-bg-color="#ffffff" data-bg-opacity="1" data-animation="" data-delay="0">
+                                                            <div class="vc_col-sm-6 wpb_column column_container vc_column_container col child_column padding-5-percent inherit_tablet inherit_phone " data-using-bg="true" data-border-radius="10px" data-overlay-color="true" data-padding-pos="all" data-has-bg-color="true" data-bg-color="#ffffff" data-bg-opacity="1" data-animation="" data-delay="0">
                                                                 <div class="vc_column-inner">
                                                                     <div class="column-bg-overlay-wrap column-bg-layer" data-bg-animation="none">
                                                                         <div class="column-bg-overlay" style="opacity: 1; background-color: #ffffff;"></div>
@@ -2077,7 +1883,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div style="" class="vc_col-sm-6 wpb_column column_container vc_column_container col child_column padding-5-percent inherit_tablet inherit_phone " data-using-bg="true" data-border-radius="10px" data-overlay-color="true" data-padding-pos="all" data-has-bg-color="true" data-bg-color="#ffffff" data-bg-opacity="1" data-animation="" data-delay="0">
+                                                            <div class="vc_col-sm-6 wpb_column column_container vc_column_container col child_column padding-5-percent inherit_tablet inherit_phone " data-using-bg="true" data-border-radius="10px" data-overlay-color="true" data-padding-pos="all" data-has-bg-color="true" data-bg-color="#ffffff" data-bg-opacity="1" data-animation="" data-delay="0">
                                                                 <div class="vc_column-inner">
                                                                     <div class="column-bg-overlay-wrap column-bg-layer" data-bg-animation="none">
                                                                         <div class="column-bg-overlay" style="opacity: 1; background-color: #ffffff;"></div>
@@ -2226,7 +2032,7 @@
                                                             <div class="row-bg"></div>
                                                         </div>
                                                         <div class="row_col_wrap_12_inner col span_12  left">
-                                                            <div style="" class="vc_col-sm-6 wpb_column column_container vc_column_container col child_column padding-5-percent inherit_tablet inherit_phone " data-using-bg="true" data-border-radius="10px" data-overlay-color="true" data-padding-pos="all" data-has-bg-color="true" data-bg-color="#ffffff" data-bg-opacity="1" data-animation="" data-delay="0">
+                                                            <div class="vc_col-sm-6 wpb_column column_container vc_column_container col child_column padding-5-percent inherit_tablet inherit_phone " data-using-bg="true" data-border-radius="10px" data-overlay-color="true" data-padding-pos="all" data-has-bg-color="true" data-bg-color="#ffffff" data-bg-opacity="1" data-animation="" data-delay="0">
                                                                 <div class="vc_column-inner">
                                                                     <div class="column-bg-overlay-wrap column-bg-layer" data-bg-animation="none">
                                                                         <div class="column-bg-overlay" style="opacity: 1; background-color: #ffffff;"></div>
@@ -2243,7 +2049,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div style="" class="vc_col-sm-6 wpb_column column_container vc_column_container col child_column padding-5-percent inherit_tablet inherit_phone " data-using-bg="true" data-border-radius="10px" data-overlay-color="true" data-padding-pos="all" data-has-bg-color="true" data-bg-color="#ffffff" data-bg-opacity="1" data-animation="" data-delay="0">
+                                                            <div class="vc_col-sm-6 wpb_column column_container vc_column_container col child_column padding-5-percent inherit_tablet inherit_phone " data-using-bg="true" data-border-radius="10px" data-overlay-color="true" data-padding-pos="all" data-has-bg-color="true" data-bg-color="#ffffff" data-bg-opacity="1" data-animation="" data-delay="0">
                                                                 <div class="vc_column-inner">
                                                                     <div class="column-bg-overlay-wrap column-bg-layer" data-bg-animation="none">
                                                                         <div class="column-bg-overlay" style="opacity: 1; background-color: #ffffff;"></div>
@@ -2277,401 +2083,6 @@
                                         <div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
                                             <div class="vc_column-inner">
                                                 <div class="wpb_wrapper"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="selflovers" data-column-margin="100px" data-midnight="dark" class="wpb_row vc_row-fluid vc_row full-width-section  bottom_margin_4pct" style="padding-top: 0px; padding-bottom: 0px; ">
-                                    <div class="row-bg-wrap" data-bg-animation="none" data-bg-animation-delay="" data-bg-overlay="false">
-                                        <div class="inner-wrap row-bg-layer">
-                                            <div class="row-bg viewport-desktop using-bg-color" style="background-color: #ffffff; "></div>
-                                        </div>
-                                        <div class="row-bg-overlay row-bg-layer" style="background:linear-gradient(7deg, rgb(255,255,255) 0%, rgba(255,255,255,255) 0%, rgb(255,255,255) 22%, rgba(255,239,221,0.844) 35%, rgb(238,255,243) 50%, rgb(248,248,248) 65%, rgb(255,255,255) 82%, rgb(255,255,255) 100%);"></div>
-                                    </div>
-                                    <div class="row_col_wrap_12 col span_12 dark left">
-                                        <div class="vc_col-sm-12 wpb_column column_container vc_column_container col padding-8-percent inherit_tablet inherit_phone " data-padding-pos="top-bottom" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
-                                            <div class="vc_column-inner">
-                                                <div class="wpb_wrapper">
-                                                    <div class="wpb_text_column wpb_content_element ">
-                                                        <div class="wpb_wrapper">
-                                                            <h5 style="text-align: center;">
-                                                                <u>SELF LOVERS</u>
-                                                            </h5>
-                                                        </div>
-                                                    </div>
-                                                    <div class="nectar-split-heading " data-align="default" data-m-align="inherit" data-text-effect="default" data-animation-type="default" data-animation-delay="0" data-animation-offset="" data-m-rm-animation="" data-stagger="" data-custom-font-size="false">
-                                                        <div class="heading-line">
-                                                            <div>
-                                                                <h2 style="text-align: center;">Mais do que sorrisos,</h2>
-                                                            </div>
-                                                        </div>
-                                                        <div class="heading-line">
-                                                            <div>
-                                                                <h2 style="text-align: center;">
-                                                                    <strong>motivos para sorrir</strong>
-                                                                </h2>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
-                                            <div class="vc_column-inner">
-                                                <div class="wpb_wrapper">
-                                                    <div class="nectar-flickity not-initialized nectar-carousel" data-centered-cells="false" data-pause-on-hover="true" data-touch-icon-color="default" data-control-color="default" data-overflow="hidden" data-r-bottom-total="" data-drag-scale="" data-wrap="wrap" data-spacing="default" data-controls="next_prev_arrows_overlaid" data-pagination-alignment="default" data-adaptive-height="true" data-border-radius="none" data-column-border="" data-column-padding="0" data-format="default" data-autoplay="true" data-autoplay-dur="5000" data-control-style="material_pagination" data-desktop-columns="1" data-small-desktop-columns="1" data-tablet-columns="1" data-phone-columns="1" data-column-color="">
-                                                        <div class="flickity-viewport">
-                                                            <div class="flickity-slider">
-                                                                <div class="cell ">
-                                                                    <div class="inner-wrap-outer">
-                                                                        <div class="inner-wrap">
-                                                                            <div id="fws_66e83b6713d37" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row" style="">
-                                                                                <div class="row-bg-wrap">
-                                                                                    <div class="row-bg"></div>
-                                                                                </div>
-                                                                                <div class="row_col_wrap_12_inner col span_12  left">
-                                                                                    <div class="vc_col-sm-6 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
-                                                                                        <div class="vc_column-inner">
-                                                                                            <div class="wpb_wrapper">
-                                                                                                <div class="img-with-aniamtion-wrap  custom-width-85pct " data-max-width="custom" data-max-width-mobile="default" data-border-radius="10px" data-shadow="none" data-animation="none">
-                                                                                                    <div class="inner">
-                                                                                                        <div class="hover-wrap">
-                                                                                                            <div class="hover-wrap-inner">
-                                                                                                                <img loading="lazy" decoding="async" class="img-with-animation skip-lazy " data-delay="0" height="778" width="559" data-animation="none" src="https://sejaself.com.br/wp-content/uploads/2022/10/orto.png" alt="" srcset="https://sejaself.com.br/wp-content/uploads/2022/10/orto.png 559w, https://sejaself.com.br/wp-content/uploads/2022/10/orto-216x300.png 216w" sizes="(max-width: 559px) 100vw, 559px"/>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                                <div class="wpb_text_column wpb_content_element ">
-                                                                                                    <div class="wpb_wrapper">
-                                                                                                        <h4>“Jessica chegou ao meu consultório com queixas estéticas. Após avaliação clínica indiquei o uso de alinhadores transparentes. Como é uma paciente colaborativa o tratamento está indo muito bem e logo ela finalizará e terá seu sorriso transformado.”</h4>
-                                                                                                        <h6>
-                                                                                                            <strong>Dra Thalita Nogueira</strong>
-                                                                                                        </h6>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="vc_col-sm-6 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
-                                                                                        <div class="vc_column-inner">
-                                                                                            <div class="wpb_wrapper">
-                                                                                                <div class="wpb_text_column wpb_content_element ">
-                                                                                                    <div class="wpb_wrapper">
-                                                                                                        <h4>“Com certeza foi uma ótima escolha ter optado pelos alinhadores! Estou tendo um ótimo resultado em pouquíssimo tempo além de ser esteticamente super discreto!”</h4>
-                                                                                                        <h6>
-                                                                                                            <strong>Paciente Jessica Pavan</strong>
-                                                                                                        </h6>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                                <div class="img-with-aniamtion-wrap  custom-width-85pct " data-max-width="custom" data-max-width-mobile="default" data-border-radius="10px" data-shadow="none" data-animation="none">
-                                                                                                    <div class="inner">
-                                                                                                        <div class="hover-wrap">
-                                                                                                            <div class="hover-wrap-inner">
-                                                                                                                <img loading="lazy" decoding="async" class="img-with-animation skip-lazy " data-delay="0" height="778" width="559" data-animation="none" src="https://sejaself.com.br/wp-content/uploads/2022/10/paciente.png" alt="" srcset="https://sejaself.com.br/wp-content/uploads/2022/10/paciente.png 559w, https://sejaself.com.br/wp-content/uploads/2022/10/paciente-216x300.png 216w" sizes="(max-width: 559px) 100vw, 559px"/>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                                <div class="divider-wrap" data-alignment="default">
-                                                                                                    <div style="height: 50px;" class="divider"></div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="cell ">
-                                                                    <div class="inner-wrap-outer">
-                                                                        <div class="inner-wrap">
-                                                                            <div id="fws_66e83b671b021" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row" style="">
-                                                                                <div class="row-bg-wrap">
-                                                                                    <div class="row-bg"></div>
-                                                                                </div>
-                                                                                <div class="row_col_wrap_12_inner col span_12  left">
-                                                                                    <div class="vc_col-sm-6 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
-                                                                                        <div class="vc_column-inner">
-                                                                                            <div class="wpb_wrapper">
-                                                                                                <div class="img-with-aniamtion-wrap  custom-width-85pct " data-max-width="custom" data-max-width-mobile="default" data-border-radius="10px" data-shadow="none" data-animation="none">
-                                                                                                    <div class="inner">
-                                                                                                        <div class="hover-wrap">
-                                                                                                            <div class="hover-wrap-inner">
-                                                                                                                <img loading="lazy" decoding="async" class="img-with-animation skip-lazy " data-delay="0" height="1600" width="1252" data-animation="none" src="https://sejaself.com.br/wp-content/uploads/2022/11/WhatsApp-Image-2022-10-31-at-15.23.15.jpeg" alt="" srcset="https://sejaself.com.br/wp-content/uploads/2022/11/WhatsApp-Image-2022-10-31-at-15.23.15.jpeg 1252w, https://sejaself.com.br/wp-content/uploads/2022/11/WhatsApp-Image-2022-10-31-at-15.23.15-235x300.jpeg 235w, https://sejaself.com.br/wp-content/uploads/2022/11/WhatsApp-Image-2022-10-31-at-15.23.15-801x1024.jpeg 801w, https://sejaself.com.br/wp-content/uploads/2022/11/WhatsApp-Image-2022-10-31-at-15.23.15-768x981.jpeg 768w, https://sejaself.com.br/wp-content/uploads/2022/11/WhatsApp-Image-2022-10-31-at-15.23.15-1202x1536.jpeg 1202w" sizes="(max-width: 1252px) 100vw, 1252px"/>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                                <div class="wpb_text_column wpb_content_element ">
-                                                                                                    <div class="wpb_wrapper">
-                                                                                                        <h4>“A paciente Amanda se queixou da estética do seu sorriso e por morar em outra cidade o alinhador se encaixou perfeitamente, tendo em vista que as emergência são bem menores e podemos diminuir a vinda ao consultório. O tratamento foi super bem e tivemos um ótimo resultado.”</h4>
-                                                                                                        <h6>
-                                                                                                            <strong>Dra Thalita Nogueira</strong>
-                                                                                                        </h6>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="vc_col-sm-6 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
-                                                                                        <div class="vc_column-inner">
-                                                                                            <div class="wpb_wrapper">
-                                                                                                <div class="wpb_text_column wpb_content_element ">
-                                                                                                    <div class="wpb_wrapper">
-                                                                                                        <h6>
-                                                                                                            “De início eu achei que não daria certo o tratamento por se tratar de trocar apenas as placas, mas decidi tentar… e ainda bem. Hoje no fim do tratamento achei muito mais eficaz do que aparelhos que ficamos muito tempo e o resultado talvez nem seja o esperado. Foi um ótimo tratamento, alinhou e mudou completamente meu sorriso, estou muito feliz com resultado.&#8221;<br/>
-                                                                                                            <strong>Paciente Amanda Bartolomeu</strong>
-                                                                                                        </h6>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                                <div class="divider-wrap" data-alignment="default">
-                                                                                                    <div style="height: 50px;" class="divider"></div>
-                                                                                                </div>
-                                                                                                <div class="img-with-aniamtion-wrap  custom-width-85pct " data-max-width="custom" data-max-width-mobile="default" data-border-radius="10px" data-shadow="none" data-animation="none">
-                                                                                                    <div class="inner">
-                                                                                                        <div class="hover-wrap">
-                                                                                                            <div class="hover-wrap-inner">
-                                                                                                                <img loading="lazy" decoding="async" class="img-with-animation skip-lazy " data-delay="0" height="768" width="1024" data-animation="none" src="https://sejaself.com.br/wp-content/uploads/2022/11/WhatsApp-Image-2022-10-31-at-15.25.00.jpeg" alt="" srcset="https://sejaself.com.br/wp-content/uploads/2022/11/WhatsApp-Image-2022-10-31-at-15.25.00.jpeg 1024w, https://sejaself.com.br/wp-content/uploads/2022/11/WhatsApp-Image-2022-10-31-at-15.25.00-300x225.jpeg 300w, https://sejaself.com.br/wp-content/uploads/2022/11/WhatsApp-Image-2022-10-31-at-15.25.00-768x576.jpeg 768w" sizes="(max-width: 1024px) 100vw, 1024px"/>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
-                                            <div class="vc_column-inner">
-                                                <div class="wpb_wrapper">
-                                                    <div class="divider-wrap" data-alignment="default">
-                                                        <div style="height: 50px;" class="divider"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="vc_col-sm-12 aditek wpb_column column_container vc_column_container col padding-6-percent inherit_tablet inherit_phone " data-border-radius="15px" data-overlay-color="true" data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
-                                            <div class="vc_column-inner">
-                                                <div class="column-bg-overlay-wrap column-bg-layer" data-bg-animation="none">
-                                                    <div class="column-bg-overlay"></div>
-                                                    <div class="column-overlay-layer" style="background: #1b2c27; background: linear-gradient(to bottom,#1b2c27 0%,#4e6d6c 100%);  opacity: 1; "></div>
-                                                </div>
-                                                <div class="wpb_wrapper">
-                                                    <div id="fws_66e83b6722fc5" data-midnight="" data-column-margin="default" class="wpb_row vc_row-fluid vc_row inner_row" style="">
-                                                        <div class="row-bg-wrap">
-                                                            <div class="row-bg"></div>
-                                                        </div>
-                                                        <div class="row_col_wrap_12_inner col span_12  left">
-                                                            <div style=" color: #ffffff;" class="vc_col-sm-6 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone " data-cfc="true" data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
-                                                                <div class="vc_column-inner">
-                                                                    <div class="wpb_wrapper">
-                                                                        <div class="wpb_text_column wpb_content_element " style=" max-width: 380px; display: inline-block;">
-                                                                            <div class="wpb_wrapper">
-                                                                                <h3>Self é uma solução da Aditek, referência em tecnologia para ortodontistas</h3>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="vc_col-sm-2 vc_hidden-sm vc_hidden-xs wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
-                                                                <div class="vc_column-inner">
-                                                                    <div class="wpb_wrapper">
-                                                                        <div class="divider-wrap" data-alignment="default">
-                                                                            <div style="height: 25px;" class="divider"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="vc_col-sm-4 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
-                                                                <div class="vc_column-inner">
-                                                                    <div class="wpb_wrapper">
-                                                                        <div class="img-with-aniamtion-wrap " data-max-width="100%" data-max-width-mobile="default" data-shadow="none" data-animation="none">
-                                                                            <div class="inner">
-                                                                                <div class="hover-wrap">
-                                                                                    <div class="hover-wrap-inner">
-                                                                                        <a href="https://www.aditek.com.br/" target="_blank" class="">
-                                                                                            <img loading="lazy" decoding="async" class="img-with-animation skip-lazy " data-delay="0" height="122" width="507" data-animation="none" src="https://sejaself.com.br/wp-content/uploads/2022/09/Group-20991-2.svg" alt=""/>
-                                                                                        </a>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="vc_col-sm-12 vc_hidden-sm vc_hidden-xs wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
-                                                                <div class="vc_column-inner">
-                                                                    <div class="wpb_wrapper">
-                                                                        <div class="divider-wrap" data-alignment="default">
-                                                                            <div style="height: 50px;" class="divider"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div id="fws_66e83b6734e3a" data-midnight="" data-column-margin="20px" class="wpb_row vc_row-fluid vc_row inner_row argumnto" style="">
-                                                        <div class="row-bg-wrap">
-                                                            <div class="row-bg"></div>
-                                                        </div>
-                                                        <div class="row_col_wrap_12_inner col span_12  left">
-                                                            <div class="vc_col-sm-6 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
-                                                                <div class="vc_column-inner">
-                                                                    <div class="wpb_wrapper">
-                                                                        <div class="img-with-aniamtion-wrap " data-max-width="100%" data-max-width-mobile="default" data-shadow="none" data-animation="none">
-                                                                            <div class="inner">
-                                                                                <div class="hover-wrap">
-                                                                                    <div class="hover-wrap-inner">
-                                                                                        <img loading="lazy" decoding="async" class="img-with-animation skip-lazy " data-delay="0" height="264" width="652" data-animation="none" src="https://sejaself.com.br/wp-content/uploads/2022/09/Group-20909-1.svg" alt=""/>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="divider-wrap" data-alignment="default">
-                                                                            <div style="height: 10px;" class="divider"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="vc_col-sm-6 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
-                                                                <div class="vc_column-inner">
-                                                                    <div class="wpb_wrapper">
-                                                                        <div class="img-with-aniamtion-wrap " data-max-width="100%" data-max-width-mobile="default" data-shadow="none" data-animation="none">
-                                                                            <div class="inner">
-                                                                                <div class="hover-wrap">
-                                                                                    <div class="hover-wrap-inner">
-                                                                                        <img loading="lazy" decoding="async" class="img-with-animation skip-lazy " data-delay="0" height="260" width="613" data-animation="none" src="https://sejaself.com.br/wp-content/uploads/2022/10/adi.svg" alt=""/>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="divider-wrap" data-alignment="default">
-                                                                            <div style="height: 10px;" class="divider"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="vc_col-sm-6 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
-                                                                <div class="vc_column-inner">
-                                                                    <div class="wpb_wrapper">
-                                                                        <div class="img-with-aniamtion-wrap " data-max-width="100%" data-max-width-mobile="default" data-shadow="none" data-animation="none">
-                                                                            <div class="inner">
-                                                                                <div class="hover-wrap">
-                                                                                    <div class="hover-wrap-inner">
-                                                                                        <img loading="lazy" decoding="async" class="img-with-animation skip-lazy " data-delay="0" height="442" width="651" data-animation="none" src="https://sejaself.com.br/wp-content/uploads/2022/09/Group-20994-min-min.png" alt="" srcset="https://sejaself.com.br/wp-content/uploads/2022/09/Group-20994-min-min.png 651w, https://sejaself.com.br/wp-content/uploads/2022/09/Group-20994-min-min-300x204.png 300w" sizes="(max-width: 651px) 100vw, 651px"/>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="divider-wrap" data-alignment="default">
-                                                                            <div style="height: 10px;" class="divider"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="vc_col-sm-6 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
-                                                                <div class="vc_column-inner">
-                                                                    <div class="wpb_wrapper">
-                                                                        <div class="img-with-aniamtion-wrap " data-max-width="100%" data-max-width-mobile="default" data-shadow="none" data-animation="none">
-                                                                            <div class="inner">
-                                                                                <div class="hover-wrap">
-                                                                                    <div class="hover-wrap-inner">
-                                                                                        <img loading="lazy" decoding="async" class="img-with-animation skip-lazy " data-delay="0" height="442" width="651" data-animation="none" src="https://sejaself.com.br/wp-content/uploads/2022/09/Group-20993-2-min.png" alt="" srcset="https://sejaself.com.br/wp-content/uploads/2022/09/Group-20993-2-min.png 651w, https://sejaself.com.br/wp-content/uploads/2022/09/Group-20993-2-min-300x204.png 300w" sizes="(max-width: 651px) 100vw, 651px"/>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="vc_col-sm-12 wpb_column column_container vc_column_container col child_column no-extra-padding inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
-                                                                <div class="vc_column-inner">
-                                                                    <div class="wpb_wrapper">
-                                                                        <div class="divider-wrap" data-alignment="default">
-                                                                            <div style="height: 10px;" class="divider"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="vc_col-sm-12 wpb_column column_container vc_column_container col no-extra-padding inherit_tablet inherit_phone " data-padding-pos="all" data-has-bg-color="false" data-bg-color="" data-bg-opacity="1" data-animation="" data-delay="0">
-                                            <div class="vc_column-inner">
-                                                <div class="wpb_wrapper">
-                                                    <div class="divider-wrap" data-alignment="default">
-                                                        <div style="height: 50px;" class="divider"></div>
-                                                    </div>
-                                                    <div id="ctafim" data-midnight="" data-column-margin="20px" class="wpb_row vc_row-fluid vc_row inner_row vc_row-o-equal-height vc_row-flex vc_row-o-content-top" style="">
-                                                        <div class="row-bg-wrap">
-                                                            <div class="row-bg"></div>
-                                                        </div>
-                                                        <div class="row_col_wrap_12_inner col span_12  left">
-                                                            <div style=" color: #15bb7f;" class="vc_col-sm-6 wpb_column column_container vc_column_container col child_column padding-6-percent inherit_tablet inherit_phone " data-cfc="true" data-using-bg="true" data-border-radius="15px" data-padding-pos="all" data-has-bg-color="true" data-bg-color="#1b2c27" data-bg-opacity="1" data-animation="" data-delay="0">
-                                                                <div class="vc_column-inner">
-                                                                    <div class="column-bg-overlay-wrap column-bg-layer" data-bg-animation="none">
-                                                                        <div class="column-bg-overlay" style="opacity: 1; background-color: #1b2c27;"></div>
-                                                                    </div>
-                                                                    <div class="wpb_wrapper">
-                                                                        <div class="wpb_text_column wpb_content_element ">
-                                                                            <div class="wpb_wrapper">
-                                                                                <h6>
-                                                                                    <span style="color: #ffffff;">PARA ORTODONTISTAS</span>
-                                                                                </h6>
-                                                                                <p>&nbsp;</p>
-                                                                                <h2>Acesse a plataforma digital completa da ortodontia</h2>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="divider-wrap" data-alignment="default">
-                                                                            <div style="height: 20px;" class="divider"></div>
-                                                                        </div>
-                                                                        <a class="nectar-button jumbo regular extra-color-2 has-icon  regular-button" style="color: #1b2c27; background-color: #eefff3;" href="/ortodontistas" data-color-override="#eefff3" data-hover-color-override="false" data-hover-text-color-override="#fff">
-                                                                            <span>Seja um especialista Self</span>
-                                                                            <i style="color: #1b2c27;" class="fa fa-chevron-right"></i>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div style="" class="vc_col-sm-6 wpb_column column_container vc_column_container col child_column padding-6-percent inherit_tablet inherit_phone " data-using-bg="true" data-border-radius="15px" data-overlay-color="true" data-padding-pos="all" data-has-bg-color="true" data-bg-color="#ffffff" data-bg-opacity="1" data-animation="" data-delay="0">
-                                                                <div class="vc_column-inner">
-                                                                    <div class="column-bg-overlay-wrap column-bg-layer" data-bg-animation="none">
-                                                                        <div class="column-bg-overlay" style="opacity: 1; background-color: #ffffff;"></div>
-                                                                        <div class="column-overlay-layer" style="background:linear-gradient(165deg, rgba(217, 217, 217, 0.467) 10%, rgba(251, 245, 228, 0.705) 54%, rgba(238, 254, 242, 0.455) 100%);"></div>
-                                                                    </div>
-                                                                    <div class="wpb_wrapper">
-                                                                        <div class="wpb_text_column wpb_content_element ">
-                                                                            <div class="wpb_wrapper">
-                                                                                <h6>PARA PACIENTES</h6>
-                                                                                <p>&nbsp;</p>
-                                                                                <h2>Mais do que o sorriso, motivos para sorrir</h2>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="divider-wrap" data-alignment="default">
-                                                                            <div style="height: 20px;" class="divider"></div>
-                                                                        </div>
-                                                                        <a class="nectar-button jumbo regular accent-color has-icon  regular-button" style="" href="https://sejaself.com.br/para-pacientes" data-color-override="false" data-hover-color-override="false" data-hover-text-color-override="#fff">
-                                                                            <span>Encontre um especialista Self</span>
-                                                                            <i class="fa fa-chevron-right"></i>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -2796,32 +2207,9 @@
         <!--/ocm-effect-wrap-->
         <script type='text/javascript' async src='https://d335luupugsy2.cloudfront.net/js/loader-scripts/2e92888b-fa51-4fa1-9ee7-3706105379a4-loader.js'></script>
         <script type="text/html" id="wpb-modifications"></script>
-        <link data-pagespeed-no-defer data-nowprocket data-wpacu-skip nitro-exclude data-no-optimize data-noptimize data-no-optimize="1" rel='stylesheet' id='main-styles-non-critical-css' href='https://sejaself.com.br/wp-content/themes/salient/css/build/style-non-critical.css?ver=15.0.2' type='text/css' media='all'/>
-        <link data-pagespeed-no-defer data-nowprocket data-wpacu-skip nitro-exclude data-no-optimize data-noptimize data-no-optimize="1" rel='stylesheet' id='fancyBox-css' href='https://sejaself.com.br/wp-content/themes/salient/css/build/plugins/jquery.fancybox.css?ver=3.3.1' type='text/css' media='all'/>
-        <link data-pagespeed-no-defer data-nowprocket data-wpacu-skip nitro-exclude data-no-optimize data-noptimize data-no-optimize="1" rel='stylesheet' id='nectar-ocm-core-css' href='https://sejaself.com.br/wp-content/themes/salient/css/build/off-canvas/core.css?ver=15.0.2' type='text/css' media='all'/>
-        <link data-pagespeed-no-defer data-nowprocket data-wpacu-skip nitro-exclude data-no-optimize data-noptimize data-no-optimize="1" rel='stylesheet' id='nectar-ocm-slide-out-right-material-css' href='https://sejaself.com.br/wp-content/themes/salient/css/build/off-canvas/slide-out-right-material.css?ver=15.0.2' type='text/css' media='all'/>
         <script type="text/javascript" src="https://sejaself.com.br/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
         <script type="text/javascript" src="https://sejaself.com.br/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.13.3" id="jquery-ui-datepicker-js"></script>
-        <script type="text/javascript" id="jquery-ui-datepicker-js-after">
-            /* <![CDATA[ */
-            jQuery(function(jQuery) {
-                jQuery.datepicker.setDefaults({
-                    "closeText": "Fechar",
-                    "currentText": "Hoje",
-                    "monthNames": ["janeiro", "fevereiro", "mar\u00e7o", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"],
-                    "monthNamesShort": ["jan", "fev", "mar", "abr", "maio", "jun", "jul", "ago", "set", "out", "nov", "dez"],
-                    "nextText": "Seguinte",
-                    "prevText": "Anterior",
-                    "dayNames": ["domingo", "segunda-feira", "ter\u00e7a-feira", "quarta-feira", "quinta-feira", "sexta-feira", "s\u00e1bado"],
-                    "dayNamesShort": ["dom", "seg", "ter", "qua", "qui", "sex", "s\u00e1b"],
-                    "dayNamesMin": ["D", "S", "T", "Q", "Q", "S", "S"],
-                    "dateFormat": "d \\dd\\e MM \\dd\\e yy",
-                    "firstDay": 0,
-                    "isRTL": false
-                });
-            });
-            /* ]]> */
-        </script>
+
         <script type="text/javascript" src="https://sejaself.com.br/wp-content/plugins/modern-events-calendar-lite/assets/js/jquery.typewatch.js?ver=6.6.12" id="mec-typekit-script-js"></script>
         <script type="text/javascript" src="https://sejaself.com.br/wp-content/plugins/modern-events-calendar-lite/assets/packages/featherlight/featherlight.js?ver=6.6.12" id="featherlight-js"></script>
         <script type="text/javascript" src="https://sejaself.com.br/wp-content/plugins/modern-events-calendar-lite/assets/packages/select2/select2.full.min.js?ver=6.6.12" id="mec-select2-script-js"></script>
@@ -2841,26 +2229,7 @@
         </script>
         <script type="text/javascript" src="https://sejaself.com.br/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.6.4" id="contact-form-7-js"></script>
         <script type="text/javascript" src="https://sejaself.com.br/wp-content/plugins/wp-whatsapp/assets/dist/js/njt-whatsapp.js?ver=3.4" id="nta-wa-libs-js"></script>
-        <script type="text/javascript" id="nta-js-global-js-extra">
-            /* <![CDATA[ */
-            var njt_wa_global = {
-                "ajax_url": "https:\/\/sejaself.com.br\/wp-admin\/admin-ajax.php",
-                "nonce": "c6f113f82f",
-                "defaultAvatarSVG": "<svg width=\"48px\" height=\"48px\" class=\"nta-whatsapp-default-avatar\" version=\"1.1\" id=\"Layer_1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" x=\"0px\" y=\"0px\"\n            viewBox=\"0 0 512 512\" style=\"enable-background:new 0 0 512 512;\" xml:space=\"preserve\">\n            <path style=\"fill:#EDEDED;\" d=\"M0,512l35.31-128C12.359,344.276,0,300.138,0,254.234C0,114.759,114.759,0,255.117,0\n            S512,114.759,512,254.234S395.476,512,255.117,512c-44.138,0-86.51-14.124-124.469-35.31L0,512z\"\/>\n            <path style=\"fill:#55CD6C;\" d=\"M137.71,430.786l7.945,4.414c32.662,20.303,70.621,32.662,110.345,32.662\n            c115.641,0,211.862-96.221,211.862-213.628S371.641,44.138,255.117,44.138S44.138,137.71,44.138,254.234\n            c0,40.607,11.476,80.331,32.662,113.876l5.297,7.945l-20.303,74.152L137.71,430.786z\"\/>\n            <path style=\"fill:#FEFEFE;\" d=\"M187.145,135.945l-16.772-0.883c-5.297,0-10.593,1.766-14.124,5.297\n            c-7.945,7.062-21.186,20.303-24.717,37.959c-6.179,26.483,3.531,58.262,26.483,90.041s67.09,82.979,144.772,105.048\n            c24.717,7.062,44.138,2.648,60.028-7.062c12.359-7.945,20.303-20.303,22.952-33.545l2.648-12.359\n            c0.883-3.531-0.883-7.945-4.414-9.71l-55.614-25.6c-3.531-1.766-7.945-0.883-10.593,2.648l-22.069,28.248\n            c-1.766,1.766-4.414,2.648-7.062,1.766c-15.007-5.297-65.324-26.483-92.69-79.448c-0.883-2.648-0.883-5.297,0.883-7.062\n            l21.186-23.834c1.766-2.648,2.648-6.179,1.766-8.828l-25.6-57.379C193.324,138.593,190.676,135.945,187.145,135.945\"\/>\n        <\/svg>",
-                "defaultAvatarUrl": "https:\/\/sejaself.com.br\/wp-content\/plugins\/wp-whatsapp\/assets\/img\/whatsapp_logo.svg",
-                "timezone": "America\/Sao_Paulo",
-                "i18n": {
-                    "online": "Online",
-                    "offline": "Offline"
-                },
-                "urlSettings": {
-                    "onDesktop": "api",
-                    "onMobile": "api",
-                    "openInNewTab": "ON"
-                }
-            };
-            /* ]]> */
-        </script>
+
         <script type="text/javascript" src="https://sejaself.com.br/wp-content/plugins/wp-whatsapp/assets/js/whatsapp-button.js?ver=3.4" id="nta-js-global-js"></script>
         <script type="text/javascript" src="https://sejaself.com.br/wp-content/themes/salient/js/build/third-party/jquery.easing.min.js?ver=1.3" id="jquery-easing-js"></script>
         <script type="text/javascript" src="https://sejaself.com.br/wp-content/themes/salient/js/build/third-party/jquery.mousewheel.min.js?ver=3.1.13" id="jquery-mousewheel-js"></script>
@@ -2873,52 +2242,11 @@
         <script type="text/javascript" src="https://sejaself.com.br/wp-content/themes/salient/js/build/third-party/anime.min.js?ver=4.5.1" id="anime-js"></script>
         <script type="text/javascript" src="https://sejaself.com.br/wp-content/themes/salient/js/build/third-party/flickity.min.js?ver=2.3" id="flickity-js"></script>
         <script type="text/javascript" src="https://sejaself.com.br/wp-content/themes/salient/js/build/third-party/superfish.js?ver=1.5.8" id="superfish-js"></script>
-        <script type="text/javascript" id="nectar-frontend-js-extra">
-            /* <![CDATA[ */
-            var nectarLove = {
-                "ajaxurl": "https:\/\/sejaself.com.br\/wp-admin\/admin-ajax.php",
-                "postID": "285",
-                "rooturl": "https:\/\/sejaself.com.br",
-                "disqusComments": "false",
-                "loveNonce": "283b74c8af",
-                "mapApiKey": ""
-            };
-            var nectarOptions = {
-                "delay_js": "0",
-                "quick_search": "false",
-                "react_compat": "disabled",
-                "header_entrance": "false",
-                "mobile_header_format": "default",
-                "ocm_btn_position": "default",
-                "left_header_dropdown_func": "default",
-                "ajax_add_to_cart": "0",
-                "ocm_remove_ext_menu_items": "remove_images",
-                "woo_product_filter_toggle": "0",
-                "woo_sidebar_toggles": "true",
-                "woo_sticky_sidebar": "0",
-                "woo_minimal_product_hover": "default",
-                "woo_minimal_product_effect": "default",
-                "woo_related_upsell_carousel": "false",
-                "woo_product_variable_select": "default"
-            };
-            var nectar_front_i18n = {
-                "next": "Next",
-                "previous": "Previous"
-            };
-            /* ]]> */
-        </script>
+        
         <script type="text/javascript" src="https://sejaself.com.br/wp-content/themes/salient/js/build/init.js?ver=15.0.2" id="nectar-frontend-js"></script>
         <script type="text/javascript" src="https://sejaself.com.br/wp-content/plugins/salient-core/js/third-party/touchswipe.min.js?ver=1.0" id="touchswipe-js"></script>
         <script type="text/javascript" src="https://sejaself.com.br/wp-content/themes/salient/js/build/third-party/vivus.min.js?ver=6.0.1" id="vivus-js"></script>
-        <script type="text/javascript" id="wpb_composer_front_js-js-extra">
-            /* <![CDATA[ */
-            var vcData = {
-                "currentTheme": {
-                    "slug": "salient"
-                }
-            };
-            /* ]]> */
-        </script>
+
         <script type="text/javascript" src="https://sejaself.com.br/wp-content/plugins/js_composer_salient/assets/js/dist/js_composer_front.min.js?ver=6.9.1" id="wpb_composer_front_js-js"></script>
     </body>
 </html>
