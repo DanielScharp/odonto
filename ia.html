@@ -39,7 +39,7 @@
             </div>
             <div>
                 <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-                    <div class="hidden md:block md:ml-6">
+                    <div class="hidden lg:block lg:ml-6">
                         <ul class="flex gap-8 items-center">
                             <li class="cursor-pointer menu-item">Para ortodontistas</li>
                             <li class="cursor-pointer menu-item">Para pacientes</li>
@@ -54,7 +54,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="flex items-center md:hidden">
+                <div class="flex items-center lg:hidden">
                     <!-- Botão do Menu Hambúrguer -->
                     <button id="menu-button"
                         class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
@@ -333,23 +333,23 @@
     });
 
     window.addEventListener('resize', () => {
-        if (window.innerWidth > 640) {
+        if (window.innerWidth > 1024) {
             if (mobileMenu.style.display === "block") {
                 mobileMenu.style.display = "none";
             }
         }
     });
-
+/*
     window.onload = function() {
         const largura = window.innerWidth;
-        if (largura > 640) {
-            alert(mobileMenu.style.display)
+        if (largura > 1024) {
+            alert(largura)
             if (mobileMenu.style.display === "block") {
                 mobileMenu.style.display = "none";
             }
         }
     };
-
+*/
 </script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
