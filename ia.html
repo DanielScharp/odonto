@@ -8,11 +8,12 @@
     </script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./swiper-bundle.css" />
 
     <style>
         body {
             font-family: 'Roboto', sans-serif;
+            box-sizing: border-box;
         }
 
         .menu-item {
@@ -81,7 +82,7 @@
         </div>
     </nav>
     <!-- Header Section -->
-    <header class="text-white pt-16 main-carousel relative">
+    <header class="text-white lg:pt-16 main-carousel relative">
         <!-- Slider main container -->
         <div class="swiper ">
             <!-- Additional required wrapper -->
@@ -89,7 +90,7 @@
                 <!-- Slides -->
                 <div class="swiper-slide">
                     <div class="relative carousel-cell">
-                        <video autoplay class="w-full h-5/6 object-cover" height="700" loop muted
+                        <video autoplay class="w-full h-2/6 lg:h-5/6 object-cover" loop muted
                             poster="fotoVideo.PNG">
                             <source src="video.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
@@ -114,7 +115,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="relative carousel-cell">
-                        <video autoplay class="w-full h-5/6 object-cover" height="700" loop muted>
+                        <video autoplay class="w-full h-2/6 lg:h-5/6 object-cover"loop muted>
                             <source src="video2.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
