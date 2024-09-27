@@ -39,7 +39,7 @@
             </div>
             <div>
                 <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-                    <div class="hidden sm:block sm:ml-6">
+                    <div class="hidden md:block md:ml-6">
                         <ul class="flex gap-8 items-center">
                             <li class="cursor-pointer menu-item">Para ortodontistas</li>
                             <li class="cursor-pointer menu-item">Para pacientes</li>
@@ -54,7 +54,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="flex items-center sm:hidden">
+                <div class="flex items-center md:hidden">
                     <!-- Botão do Menu Hambúrguer -->
                     <button id="menu-button"
                         class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
@@ -73,14 +73,10 @@
         <!-- Menu móvel -->
         <div class="sm:hidden" id="mobile-menu" style="display: none;">
             <div class="px-2 pt-2 pb-3 space-y-1">
-                <a href="#"
-                    class="text-gray-700 hover:bg-gray-200 block px-3 py-2 rounded-md text-base font-medium">Home</a>
-                <a href="#"
-                    class="text-gray-700 hover:bg-gray-200 block px-3 py-2 rounded-md text-base font-medium">Sobre</a>
-                <a href="#"
-                    class="text-gray-700 hover:bg-gray-200 block px-3 py-2 rounded-md text-base font-medium">Serviços</a>
-                <a href="#"
-                    class="text-gray-700 hover:bg-gray-200 block px-3 py-2 rounded-md text-base font-medium">Contato</a>
+                <ul class="flex gap-8 items-center">
+                    <li class="cursor-pointer menu-item">Para ortodontistas</li>
+                    <li class="cursor-pointer menu-item">Para pacientes</li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -186,13 +182,13 @@
     </section>
     <!-- About Section -->
     <section class="p-2 sm:p-6 md:p-12 lg:p-16 bg-gray-50">
-        <div class="relative">
+        <div class="relative flex justify-center">
             <div class="md:w-1/2 mr-12 md:m-0">
                 <img alt="Smiling doctor in a white coat" class="rounded-lg shadow-md"
                     src="doutor.jpg"
                     width="600" />
             </div>
-            <div class="p-4 md:p-8 lg:p-12 bg-emerald-950 absolute top-3/4 md:-bottom-16 md:left-72 lg:left-96 ml-16 rounded-lg text-white">
+            <div class="bg-emerald-950 rounded-lg text-white absolute p-4 lg:p-12 w-1/4 lg:right-44 mt-16">
                 <h4 class="md:text-lg lg:text-xl font-bold mb-4">
                     ORTODONTISTA
                 </h2>
@@ -343,6 +339,16 @@
             }
         }
     });
+
+    window.onload = function() {
+        const largura = window.innerWidth;
+        if (largura > 640) {
+            if (mobileMenu.style.display === "block") {
+                mobileMenu.style.display = "none";
+            }
+        }
+    };
+
 </script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
