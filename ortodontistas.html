@@ -1,0 +1,325 @@
+<html></html>
+
+<head>
+    <title>
+        Fit Aligner
+    </title>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .menu-item {
+            border-bottom: 2px solid #022c22;
+        }
+
+        .menu-item:hover {
+            border-bottom: 2px solid #fff;
+
+            transition: .25s ease;
+            transition-duration: 0.25s;
+            transition-timing-function: ease;
+            transition-delay: 0s;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-800">
+    <!-- Sticky Menu -->
+    <nav class="bg-emerald-950 text-white fixed w-full z-50">
+        <div class="container mx-auto flex justify-between items-center py-4 px-4">
+            <div class="font-bold">
+                <img alt="Self Logo" class="h-40 lg:h-16 inline" src="logo.jpeg" />
+            </div>
+            <div>
+                <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+                    <div class="hidden lg:block">
+                        <ul class="flex gap-8 items-center">
+                            <li class="cursor-pointer menu-item"><a href="./ortodontistas.html">Para ortodontistas</a></li>
+                            <li class="cursor-pointer menu-item"><a href="./pacientes.html">Para pacientes</a></li>
+                            <li>
+                                <a class="bg-green-700 text-white px-4 py-2 rounded-full flex items-center"
+                                    href="https://api.whatsapp.com/send?phone=5555119976412&text=Ol%C3%A1!%20Estou%20entrando%20em%20contato%20atrav%C3%A9s%20do%20site%20e%20quero%20saber%20mais%20sobre%20o%20alinhador."
+                                    target="_blank">
+                                    <i class="fab fa-whatsapp mr-2"></i>
+                                    WhatsApp
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex items-center lg:hidden">
+                    <!-- Botão do Menu Hambúrguer -->
+                    <button id="menu-button"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                        aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Abrir menu</span>
+                        <svg class="block h-20 lg:h-6 w-20 lg:w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+        <!-- Menu móvel -->
+        <div class="sm:hidden" id="mobile-menu" style="display: none;">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <ul class="flex flex-col gap-4 items-center text-4xl text-center">
+                    <li class="cursor-pointer menu-item"><a href="./ortodontistas.html">Para ortodontistas</a></li>
+                    <li class="cursor-pointer menu-item"><a href="./pacientes.html">Para pacientes</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Header Section -->
+    <header class="text-white pt-16 main-carousel relative">
+        <!-- Slider main container -->
+        <div class="swiper ">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="relative carousel-cell">
+                        <video autoplay class="w-full h-5/6 object-cover" height="700" loop muted
+                            poster="fotoVideo.PNG">
+                            <source src="video.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+                            <h1 class="text-8xl lg:text-6xl font-bold">
+                                Ortodontia digital feita <br /> por quem te entende
+                            </h1>
+                            <p class="mt-4 text-4xl lg:text-lg">
+                                Uma solução completa para a transformação da sua clínica.
+                            </p>
+                            <div class="mt-6 flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2 absolute -bottom-4 text-4xl lg:text-base">
+                                <button class="bg-emerald-950 text-white px-9 lg:px-6 py-6 lg:py-2 rounded-lg hover:-translate-y-1 transition ease-in-out" style=" box-shadow: 0 20px 38px rgba(0, 0, 0, 0.16) !important;">
+                                    Sou ortodontista
+                                </button>
+                                <button class="text-emerald-950 px-9 lg:px-6 py-6 lg:py-2  rounded-lg border hover:-translate-y-1 transition ease-in-out" style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); visibility: visible;backdrop-filter: blur(14px);background-color: #ffffff82 !important; box-shadow: 0 20px 38px rgba(0, 0, 0, 0.16) !important;">
+                                    Sou paciente
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="relative carousel-cell">
+                        <video autoplay class="w-full h-5/6 object-cover" height="700" loop muted>
+                            <source src="video2.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+                            <h1 class="text-6xl font-bold">
+                                Ortodontia digital feita <br /> por quem te entende
+                            </h1>
+                            <p class="mt-4 text-lg">
+                                Uma solução completa para a transformação do seu sorriso.
+                            </p>
+                            <div class="mt-6 flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2 absolute -bottom-4 text-4xl">
+                                <button class="bg-emerald-950 text-white px-6 py-2 rounded-lg" style=" box-shadow: 0 20px 38px rgba(0, 0, 0, 0.16) !important;">
+                                    Sou ortodontista
+                                </button>
+                                <button class="text-emerald-950 px-6 py-4 rounded-lg border" style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); visibility: visible;backdrop-filter: blur(14px);background-color: #ffffff82 !important; box-shadow: 0 20px 38px rgba(0, 0, 0, 0.16) !important;">
+                                    Sou paciente
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto text-center px-4">
+            <h2 class="text-4xl font-bold mb-8">
+                Mais do que sorrisos, motivos para sorrir
+            </h2>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md text-2xl">
+                    <i class="fas fa-heart text-3xl text-green-700 mb-4">
+                    </i>
+                    <h3 class="text-3xl lg:text-2xl font-semibold mb-2">
+                        LIBERDADE
+                    </h3>
+                    <p class="text-4xl lg:text-xl">
+                        Liberdade para sorrir sem medo, sem vergonha, sem desconforto.
+                    </p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md text-2xl">
+                    <i class="fas fa-cogs text-3xl text-green-700 mb-4">
+                    </i>
+                    <h3 class="text-3xl lg:text-2xl font-semibold mb-2">
+                        TECNOLOGIA 3D SELF
+                    </h3>
+                    <p class="text-4xl lg:text-xl">
+                        Desenvolvemos a melhor tecnologia para transformar o seu sorriso.
+                    </p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md text-2xl">
+                    <i class="fas fa-user-md text-3xl text-green-700 mb-4">
+                    </i>
+                    <h3 class="text-3xl lg:text-2xl font-semibold mb-2">
+                        DE ESPECIALISTA PARA ESPECIALISTA
+                    </h3>
+                    <p class="text-4xl lg:text-xl">
+                        Mais segurança e precisão no tratamento ortodôntico.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section class="p-2 sm:p-6 md:p-12 lg:p-16 bg-gray-50">
+        <div class="relative grid lg:grid-cols-2 gap-4">
+            <div class="lg:ml-12">
+                <img alt="Smiling doctor in a white coat" class="rounded-lg shadow-md w-full"
+                    src="doutor.jpg"
+                    width="600" />
+            </div>
+            <div class="bg-emerald-950 rounded-lg text-white p-4 lg:p-12 lg:-ml-12 lg:mt-9 lg:-mb-9">
+                <h4 class="text-2xl lg:text-lg lg:text-xl font-bold mb-4">
+                    ORTODONTISTA
+                </h2>
+                <h2 class="text-3xl lg:text-1xl lg:text-3xl font-bold mb-4">
+                    Nelson Jose Carrieri Rossi
+                </h2>
+                <p class="text-2xl lg:text-base mb-4">
+                    Possui graduação em Odontologia pela Universidade Cidade de São Paulo (2006). <br />
+                    Mestrado de ortodontia pela Universidade Metodista de São Paulo (2009). <br />
+                    Especialista em inplantodontia pe Faculdade Norte de Minas- Núcleo Tatuapé (2010) Especilaista em Cirurgia buco Maxilofacial Pela Faculdade Norte de Minas - Núcleo Tatuapé (2011) Especialista em Radiologia e imagiologia odontológica pela Universidade Senac (2016), Ex Professor e Ex coordenador dos cursos Latu Sensu de ortodontia da faculdade Norte de Minas - Núcleo Tatuapé.  <br />
+                    Professor colaborador no curso Latu Senso de Ortodontia do Centro Universitario UNIFACVEST.  <br />
+                    Professor Assistente nos cursos de Atualização da SBOOM ( Sociedade Brasileira de Ortodontia e Ortopedia Maxilar) <br />
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Products Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto flex flex-col md:flex-row items-center px-4">
+            <div class="w-full pb-6 lg:w-1/2 lg:p-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.295325233989!2d-46.65886400000001!3d-23.5218782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce58096d05314d%3A0x4050e6c5b13ae82c!2sAv.%20Dr.%20Abra%C3%A3o%20Ribeiro%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001133-020!5e0!3m2!1spt-BR!2sbr!4v1727545366164!5m2!1spt-BR!2sbr" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="w-full text-center lg:w-1/2 lg:p-6">
+                <h2 class="text-5xl lg:text-3xl font-bold mb-4">
+                    Localização
+                </h2>
+                <p class="text-5xl lg:text-base mb-4">
+                    Av. dr abraão Ribeiro
+                </p>
+                <button class="text-5xl lg:text-base bg-green-700 text-white px-6 py-2 rounded-full">
+                    Saiba mais
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto text-center px-4">
+            <h2 class="text-4xl lg:text-3xl font-bold mb-8">
+                Fit Align é  referência em tecnologia
+            </h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                    <h3 class="text-4xl lg:text-xl font-semibold mb-2">
+                        Para ortodontistas
+                    </h3>
+                    <p class="text-4xl lg:text-base">
+                        Se você deseja ser um parceiro, entre em contato através do nosso whatsapp!
+                    </p>
+                    <div class="mt-4">
+                        <a class="bg-green-700 text-white px-4 py-2 rounded-full items-center"
+                            href="https://api.whatsapp.com/send?phone=5555119976412&text=Ol%C3%A1!%20Sou%20ortodontista%20e%20estou%20entrando%20em%20contato%20atrav%C3%A9s%20do%20site%20e%20quero%20saber%20mais%20sobre%20o%20alinhador."
+                            target="_blank">
+                                <i class="fab fa-whatsapp mr-2"></i>
+                                WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                    <h3 class="text-4xl lg:text-xl font-semibold mb-2">
+                        Para pacientes
+                    </h3>
+                    <p class="text-4xl lg:text-base">
+                        Entre em contato e marque uma consulta!
+                    </p>
+                    <div class="mt-4">
+                        <a class="bg-green-700 text-white px-4 py-2 rounded-full items-center"
+                            href="https://api.whatsapp.com/send?phone=5555119976412&text=Ol%C3%A1!%20Estou%20entrando%20em%20contato%20atrav%C3%A9s%20do%20site%20e%20quero%20saber%20mais%20sobre%20o%20alinhador."
+                            target="_blank">
+                                <i class="fab fa-whatsapp mr-2"></i>
+                                WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<script>
+    // Script para alternar o menu
+    const button = document.getElementById('menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    button.addEventListener('click', () => {
+        if (mobileMenu.style.display === "none" || mobileMenu.style.display === "") {
+            mobileMenu.style.display = "block";
+        } else {
+            mobileMenu.style.display = "none";
+        }
+    });
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 1024) {
+            if (mobileMenu.style.display === "block") {
+                mobileMenu.style.display = "none";
+            }
+        }
+    });
+/*
+    window.onload = function() {
+        const largura = window.innerWidth;
+        if (largura > 1024) {
+            alert(largura)
+            if (mobileMenu.style.display === "block") {
+                mobileMenu.style.display = "none";
+            }
+        }
+    };
+*/
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".swiper", {
+        grabCursor: false,
+        centeredSlides: false,
+        loop: true,
+        slidesPerView: 'auto',
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+</script>
+
+</html>
