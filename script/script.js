@@ -79,13 +79,12 @@ new e(".swiper-about", {
   effect: "carousel",
   grabCursor: !0,
   loop: !0,
-  slidesPerView: 1, // Por padrão
   breakpoints: {
     640: { // Telas com largura >= 640px
       slidesPerView: 1, 
     },
     1500: { // Telas com largura >= 1024px
-      slidesPerView: 1,
+      slidesPerView: 1.5,
     },
   },
   navigation: {
