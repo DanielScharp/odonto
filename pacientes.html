@@ -7,7 +7,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
+    <link rel="modulepreload" href="./script/swiper-opacity.js">
+    <script src="./script/tailwindcss3-4-5.js"> </script>
+    <script src="./script/swiper-bundle.js"></script>
+    <script type="module" crossorigin src="./script/script.js"></script>
     <style>
         *{
             padding: 0px;
@@ -32,8 +35,7 @@
             transition-delay: 0s;
         }
     </style>
-        <script src="https://cdn.tailwindcss.com">
-        </script>
+
 </head>
 
 <body class="bg-white text-gray-800">
@@ -98,7 +100,7 @@
     <!-- Header Section -->
     <header class="text-white pt-16 main-carousel relative">
         <!-- Slider main container -->
-        <div class="swiper ">
+        <div class="swiper swiper-banner">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
@@ -197,7 +199,7 @@
             </div>
         </div>
     </section>
-    <!-- About Section -->
+    <!-- Beneficios Section -->
     <section class="p-2 sm:p-6 md:p-12 lg:p-16">
         <div class="relative grid lg:grid-cols-2 gap-4">
             <div class="flex items-center">
@@ -215,8 +217,90 @@
             </div>
         </div>
     </section>
+    <!-- com funciona Section -->
+    <section class="p-2 sm:p-6 md:p-12 lg:p-16 ">
+        <div class="swiper swiper-about">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="swiper-carousel-animate-opacity">
+                        <div class="w-full h-full bg-emerald-950 rounded-lg">
+                            <img src="./images/6.jpg" alt="" class="w-full h-3/6 rounded-t-lg object-cover">
+                            <div class="bottom-4 left-4 w-full text-white p-12">
+                                <h2 class="text-5xl lg:text-2xl text-center">Discrição</h2>
+                                <hr class="my-6" />
+                                <p class="text-4xl lg:text-base ">Alinhadores dentais são feitos de um material transparente, tornando-os praticamente imperceptíveis quando usados. Isso os torna ideais para quem deseja corrigir os dentes sem chamar atenção, especialmente em ambientes profissionais ou sociais. A estética discreta é uma das principais razões pelas quais muitas pessoas optam por essa alternativa ao aparelho fixo tradicional.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-carousel-animate-opacity">
+                        <div class="w-full h-full bg-emerald-950 rounded-lg">
+                            <img src="./images/7.jpg" alt="" class="w-full h-3/6 rounded-t-lg object-cover">
+                            <div class="bottom-4 left-4 w-full text-white p-12">
+                                <h2 class="text-5xl lg:text-2xl text-center">Conforto</h2>
+                                <hr class="my-6" />
+                                <p class="text-4xl lg:text-base ">Feitos sob medida, os alinhadores são moldados especificamente para cada paciente, o que garante um encaixe confortável e sem as irritações causadas pelos brackets metálicos tradicionais. Além disso, o design liso e sem fios evita cortes ou lesões na boca, oferecendo uma experiência mais agradável durante o uso.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-carousel-animate-opacity">
+                        <div class="w-full h-full bg-emerald-950 rounded-lg">
+                            <img src="./images/13.jpg" alt="" class="w-full h-3/6 rounded-t-lg object-cover">
+                            <div class="bottom-4 left-4 w-full text-white p-12">
+                                <h2 class="text-5xl lg:text-2xl text-center">Removível</h2>
+                                <hr class="my-6" />
+                                <p class="text-4xl lg:text-base ">Uma das maiores vantagens dos alinhadores é que eles são removíveis. O paciente pode tirá-los para comer, beber e fazer a limpeza dos dentes, o que proporciona mais liberdade e conveniência no dia a dia. Isso também permite uma maior flexibilidade, diferente dos aparelhos fixos que exigem cuidado constante com os alimentos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-carousel-animate-opacity">
+                        <div class="w-full h-full bg-emerald-950 rounded-lg">
+                            <img src="./images/16.jpg" alt="" class="w-full h-3/6 rounded-t-lg object-cover">
+                            <div class="bottom-4 left-4 w-full text-white p-12">
+                                <h2 class="text-5xl lg:text-2xl text-center">Facilidade na Higiene Bucal</h2>
+                                <hr class="my-6" />
+                                <p class="text-4xl lg:text-base ">Com os alinhadores removíveis, é possível escovar os dentes e usar o fio dental de maneira habitual, sem a necessidade de contornar fios e brackets. Isso resulta em uma higiene bucal mais eficaz e reduz o risco de problemas como cáries ou doenças gengivais, que podem ser mais comuns com aparelhos fixos tradicionais.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-carousel-animate-opacity">
+                        <div class="w-full h-full bg-emerald-950 rounded-lg">
+                            <img src="./images/14.jpg" alt="" class="w-full h-3/6 rounded-t-lg object-cover">
+                            <div class="bottom-4 left-4 w-full text-white p-12">
+                                <h2 class="text-5xl lg:text-2xl text-center">Previsibilidade do Tratamento</h2>
+                                <hr class="my-6" />
+                                <p class="text-4xl lg:text-base ">O tratamento com alinhadores utiliza tecnologia avançada, como escaneamentos digitais 3D, para planejar cada etapa do alinhamento dentário. Isso permite que o dentista ou ortodontista mostre ao paciente uma simulação dos resultados esperados e do tempo de tratamento, tornando o processo mais transparente e previsível.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-carousel-animate-opacity">
+                        <div class="w-full h-full bg-emerald-950 rounded-lg">
+                            <img src="./images/7.jpg" alt="" class="w-full h-3/6 rounded-t-lg object-cover">
+                            <div class="bottom-4 left-4 w-full text-white p-12">
+                                <h2 class="text-5xl lg:text-2xl text-center">Menos Restrições Alimentares</h2>
+                                <hr class="my-6" />
+                                <p class="text-4xl lg:text-base ">Ao contrário dos aparelhos fixos, que requerem uma dieta restrita para evitar danos aos brackets e fios, os alinhadores podem ser removidos durante as refeições. Isso permite que o paciente continue a comer seus alimentos favoritos sem preocupações, desde que siga as orientações de uso para garantir o sucesso do tratamento.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev text-emerald-950"></div>
+            <div class="swiper-button-next text-emerald-950"></div>
+            <div class="swiper-pagination "></div>
+        </div>
+    </section>
     <!-- About Section -->
-    <section class="p-2 sm:p-6 md:p-12 lg:p-16 bg-gray-50">
+    <section class="p-2 sm:p-6 md:p-12 lg:p-16 bg-gray-100">
         <div class="relative grid lg:grid-cols-2 gap-4">
             <div class="lg:ml-12">
                 <img alt="Smiling doctor in a white coat" class="rounded-lg shadow-md w-full"
@@ -325,30 +409,7 @@
             }
         }
     });
-/*
-    window.onload = function() {
-        const largura = window.innerWidth;
-        if (largura > 1024) {
-            alert(largura)
-            if (mobileMenu.style.display === "block") {
-                mobileMenu.style.display = "none";
-            }
-        }
-    };
-*/
-</script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-    var swiper = new Swiper(".swiper", {
-        effect:"carousel",
-        grabCursor:!0,
-        loop:!0,
-        slidesPerView:"auto",
-        navigation:
-        {nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},
-        pagination:{el:".swiper-pagination"},
-        autoplay:{delay:9e3}
-    });
+
 </script>
 
 </html>
