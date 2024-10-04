@@ -83,7 +83,7 @@ new e(".swiper-about", {
     640: { // Telas com largura >= 640px
       slidesPerView: 1, 
     },
-    1500: { // Telas com largura >= 1024px
+    1024: { // Telas com largura >= 1024px
       slidesPerView: 1.5,
     },
   },
