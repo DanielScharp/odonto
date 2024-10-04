@@ -79,13 +79,10 @@ new e(".swiper-about", {
   effect: "carousel",
   grabCursor: !0,
   loop: !0,
-  slidesPerView: "auto", // Por padrão
+  slidesPerView: 1, // Por padrão
   breakpoints: {
     640: { // Telas com largura >= 640px
-      slidesPerView: 1.5, 
-    },
-    768: { // Telas com largura >= 768px
-      slidesPerView: 2,
+      slidesPerView: 1, 
     },
     1024: { // Telas com largura >= 1024px
       slidesPerView: 1.5,
