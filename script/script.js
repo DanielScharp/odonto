@@ -85,7 +85,7 @@ new e(".swiper-about", {
       slidesPerView: 1, 
     },
     1500: { // Telas com largura >= 1024px
-      slidesPerView: 1.5,
+      slidesPerView: 1,
     },
   },
   navigation: {
