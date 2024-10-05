@@ -92,14 +92,14 @@ new e(".swiper-about", {
     prevEl: ".swiper-button-prev",
   },
   pagination: { el: ".swiper-pagination" },
-  autoplay: { delay: 3e3 },
+  autoplay: { delay: 9e3 },
 });
 new Swiper(".swiper-banner", {
     effect:"carousel",
     grabCursor:!0,
     loop:!0,
     slidesPerView:"auto",
-    autoplay:{delay:3e3}
+    autoplay:{delay:9e3}
 });
 
 

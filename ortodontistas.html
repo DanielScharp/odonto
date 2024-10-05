@@ -7,7 +7,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
+    <link rel="modulepreload" href="./script/swiper-opacity.js">
+    <script src="./script/tailwindcss3-4-5.js"> </script>
+    <script src="./script/swiper-bundle.js"></script>
+    <script type="module" crossorigin src="./script/script.js"></script>
     <style>
         *{
             padding: 0px;
@@ -32,8 +35,7 @@
             transition-delay: 0s;
         }
     </style>
-        <script src="https://cdn.tailwindcss.com">
-        </script>
+
 </head>
 
 <body class="bg-white text-gray-800">
@@ -41,7 +43,7 @@
     <nav class="bg-emerald-950 text-white fixed w-full z-50">
         <div class="container mx-auto flex justify-between items-center py-4 px-4">
             <div class="font-bold">
-                <img alt="Self Logo" class="h-40 lg:h-16 inline" src="logo.jpeg" />
+                <img alt="Self Logo" class="h-40 lg:h-16 inline" src="./images/logo.jpeg" />
             </div>
             <div>
                 <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
@@ -98,7 +100,7 @@
     <!-- Header Section -->
     <header class="text-white pt-16 main-carousel relative">
         <!-- Slider main container -->
-        <div class="swiper ">
+        <div class="swiper swiper-banner">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
@@ -106,21 +108,21 @@
                     <div class="relative carousel-cell">
                         <video autoplay class="w-full h-5/6 object-cover" height="700" loop muted
                             poster="fotoVideo.PNG">
-                            <source src="video.mp4" type="video/mp4" />
+                            <source src="./videos/Video 4.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
                         <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-                            <h1 class="text-8xl lg:text-6xl font-bold">
-                                Ortodontia digital feita <br /> por quem te entende
+                            <h1 class="text-8xl lg:text-5xl font-bold">
+                                Tecnologia e Precisão: O Futuro <br> dos Tratamentos com Alinhadores
                             </h1>
                             <p class="mt-4 text-4xl lg:text-lg">
-                                Uma solução completa para a transformação da sua clínica.
+                                Utilize escaneamentos 3D e planejamentos digitais para oferecer tratamentos previsíveis e eficazes.
                             </p>
                             <div class="mt-6 flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2 absolute -bottom-4 text-4xl lg:text-base">
-                                <div class="bg-emerald-950 text-white px-9 lg:px-6 py-6 lg:py-2 rounded-lg hover:-translate-y-1 transition ease-in-out" style=" box-shadow: 0 20px 38px rgba(0, 0, 0, 0.16) !important;">
+                                <div class="bg-emerald-950 text-white px-9 lg:px-6 py-6 lg:py-2 rounded-lg hover:-translate-y-1 transition ease-in-out cursor-pointer" style=" box-shadow: 0 20px 38px rgba(0, 0, 0, 0.16) !important;">
                                     <a href="./ortodontistas.html">Sou ortodontista</a>
                                 </div>
-                                <div class="text-emerald-950 px-9 lg:px-6 py-6 lg:py-2  rounded-lg border hover:-translate-y-1 transition ease-in-out" style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); visibility: visible;backdrop-filter: blur(14px);background-color: #ffffff82 !important; box-shadow: 0 20px 38px rgba(0, 0, 0, 0.16) !important;">
+                                <div class="text-emerald-950 px-9 lg:px-6 py-6 lg:py-2  rounded-lg border hover:-translate-y-1 transition ease-in-out cursor-pointer" style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); visibility: visible;backdrop-filter: blur(14px);background-color: #ffffff82 !important; box-shadow: 0 20px 38px rgba(0, 0, 0, 0.16) !important;">
                                     <a href="./pacientes.html">Sou paciente</a>
                                 </div>
                             </div>
@@ -131,21 +133,21 @@
                 <div class="swiper-slide">
                     <div class="relative carousel-cell">
                         <video autoplay class="w-full h-5/6 object-cover" height="700" loop muted>
-                            <source src="video2.mp4" type="video/mp4" />
-                            Your browser does not support the video tag.
+                            <source src="./videos/Video 5.mp4" type="video/mp4" />
+                            Y'our browser does not support the video tag.
                         </video>
                         <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-                            <h1 class="text-8xl lg:text-6xl font-bold">
-                                Ortodontia digital feita <br /> por quem te entende
+                            <h1 class="text-8xl lg:text-5xl font-bold">
+                                Maximize Resultados e Satisfação: <br /> A Evolução da Ortodontia com Alinhadores
                             </h1>
                             <p class="mt-4 text-4xl lg:text-lg">
-                                Uma solução completa para a transformação da sua clínica.
+                                Garanta conforto e resultados precisos para seus pacientes com a última geração de alinhadores.
                             </p>
                             <div class="mt-6 flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2 absolute -bottom-4 text-4xl lg:text-base">
-                                <div class="bg-emerald-950 text-white px-9 lg:px-6 py-6 lg:py-2 rounded-lg hover:-translate-y-1 transition ease-in-out" style=" box-shadow: 0 20px 38px rgba(0, 0, 0, 0.16) !important;">
+                                <div class="bg-emerald-950 text-white px-9 lg:px-6 py-6 lg:py-2 rounded-lg hover:-translate-y-1 transition ease-in-out cursor-pointer" style=" box-shadow: 0 20px 38px rgba(0, 0, 0, 0.16) !important;">
                                     <a href="./ortodontistas.html">Sou ortodontista</a>
                                 </div>
-                                <div class="text-emerald-950 px-9 lg:px-6 py-6 lg:py-2  rounded-lg border hover:-translate-y-1 transition ease-in-out" style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); visibility: visible;backdrop-filter: blur(14px);background-color: #ffffff82 !important; box-shadow: 0 20px 38px rgba(0, 0, 0, 0.16) !important;">
+                                <div class="text-emerald-950 px-9 lg:px-6 py-6 lg:py-2  rounded-lg border hover:-translate-y-1 transition ease-in-out cursor-pointer" style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); visibility: visible;backdrop-filter: blur(14px);background-color: #ffffff82 !important; box-shadow: 0 20px 38px rgba(0, 0, 0, 0.16) !important;">
                                     <a href="./pacientes.html">Sou paciente</a>
                                 </div>
                             </div>
@@ -197,12 +199,110 @@
             </div>
         </div>
     </section>
+    <!-- Beneficios Section -->
+    <section class="p-2 sm:p-6 md:p-12 lg:p-16">
+        <div class="relative grid lg:grid-cols-2 gap-4">
+            <div class="flex items-center">
+                <video src="./videos/Video 1.mp4" autoplay loop muted class="rounded-lg"></video>
+            </div>
+            <div class=" bg-gray-100 rounded-lg p-6 lg:p-12 ">
+                <h2 class="text-5xl lg:text-3xl font-bold mb-4">
+                    Por que Adotar Alinhadores Dentais na Sua Prática Ortodôntica?
+                </h2>
+                <p class="text-4xl lg:text-lg mb-4">
+                    Trabalhar com alinhadores dentais representa uma evolução significativa na prática ortodôntica. Eles oferecem aos profissionais a possibilidade de combinar tecnologia avançada, como escaneamentos 3D e planejamento digital, com um tratamento que prioriza a estética, conforto e conveniência para o paciente. Além disso, o processo é altamente previsível, permitindo uma maior precisão nos resultados e maior satisfação dos pacientes. Para o ortodontista, essa abordagem também otimiza o tempo de consulta e simplifica a gestão de casos, oferecendo uma alternativa eficiente e moderna aos métodos tradicionais.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- com funciona Section -->
+    <section class="p-2 sm:p-6 md:p-12 lg:p-16 ">
+        <div class="swiper swiper-about">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="swiper-carousel-animate-opacity">
+                        <div class="w-full h-full bg-emerald-950 rounded-lg">
+                            <img src="./images/6.jpg" alt="" class="w-full h-4/6 lg:h-3/6 rounded-t-lg object-cover">
+                            <div class="bottom-4 left-4 w-full text-white p-12">
+                                <h2 class="text-5xl lg:text-2xl text-center">Discrição</h2>
+                                <hr class="my-6" />
+                                <p class="text-4xl lg:text-base ">Alinhadores dentais são feitos de um material transparente, tornando-os praticamente imperceptíveis quando usados. Isso os torna ideais para quem deseja corrigir os dentes sem chamar atenção, especialmente em ambientes profissionais ou sociais. A estética discreta é uma das principais razões pelas quais muitas pessoas optam por essa alternativa ao aparelho fixo tradicional.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-carousel-animate-opacity">
+                        <div class="w-full h-full bg-emerald-950 rounded-lg">
+                            <img src="./images/7.jpg" alt="" class="w-full h-4/6 lg:h-3/6 rounded-t-lg object-cover">
+                            <div class="bottom-4 left-4 w-full text-white p-12">
+                                <h2 class="text-5xl lg:text-2xl text-center">Conforto</h2>
+                                <hr class="my-6" />
+                                <p class="text-4xl lg:text-base ">Feitos sob medida, os alinhadores são moldados especificamente para cada paciente, o que garante um encaixe confortável e sem as irritações causadas pelos brackets metálicos tradicionais. Além disso, o design liso e sem fios evita cortes ou lesões na boca, oferecendo uma experiência mais agradável durante o uso.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-carousel-animate-opacity">
+                        <div class="w-full h-full bg-emerald-950 rounded-lg">
+                            <img src="./images/13.jpg" alt="" class="w-full h-4/6 lg:h-3/6 rounded-t-lg object-cover">
+                            <div class="bottom-4 left-4 w-full text-white p-12">
+                                <h2 class="text-5xl lg:text-2xl text-center">Removível</h2>
+                                <hr class="my-6" />
+                                <p class="text-4xl lg:text-base ">Uma das maiores vantagens dos alinhadores é que eles são removíveis. O paciente pode tirá-los para comer, beber e fazer a limpeza dos dentes, o que proporciona mais liberdade e conveniência no dia a dia. Isso também permite uma maior flexibilidade, diferente dos aparelhos fixos que exigem cuidado constante com os alimentos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-carousel-animate-opacity">
+                        <div class="w-full h-full bg-emerald-950 rounded-lg">
+                            <img src="./images/16.jpg" alt="" class="w-full h-4/6 lg:h-3/6 rounded-t-lg object-cover">
+                            <div class="bottom-4 left-4 w-full text-white p-12">
+                                <h2 class="text-5xl lg:text-2xl text-center">Facilidade na Higiene Bucal</h2>
+                                <hr class="my-6" />
+                                <p class="text-4xl lg:text-base ">Com os alinhadores removíveis, é possível escovar os dentes e usar o fio dental de maneira habitual, sem a necessidade de contornar fios e brackets. Isso resulta em uma higiene bucal mais eficaz e reduz o risco de problemas como cáries ou doenças gengivais, que podem ser mais comuns com aparelhos fixos tradicionais.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-carousel-animate-opacity">
+                        <div class="w-full h-full bg-emerald-950 rounded-lg">
+                            <img src="./images/14.jpg" alt="" class="w-full h-4/6 lg:h-3/6 rounded-t-lg object-cover">
+                            <div class="bottom-4 left-4 w-full text-white p-12">
+                                <h2 class="text-5xl lg:text-2xl text-center">Previsibilidade do Tratamento</h2>
+                                <hr class="my-6" />
+                                <p class="text-4xl lg:text-base ">O tratamento com alinhadores utiliza tecnologia avançada, como escaneamentos digitais 3D, para planejar cada etapa do alinhamento dentário. Isso permite que o dentista ou ortodontista mostre ao paciente uma simulação dos resultados esperados e do tempo de tratamento, tornando o processo mais transparente e previsível.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-carousel-animate-opacity">
+                        <div class="w-full h-full bg-emerald-950 rounded-lg">
+                            <img src="./images/7.jpg" alt="" class="w-full h-4/6 lg:h-3/6 rounded-t-lg object-cover">
+                            <div class="bottom-4 left-4 w-full text-white p-12">
+                                <h2 class="text-5xl lg:text-2xl text-center">Menos Restrições Alimentares</h2>
+                                <hr class="my-6" />
+                                <p class="text-4xl lg:text-base ">Ao contrário dos aparelhos fixos, que requerem uma dieta restrita para evitar danos aos brackets e fios, os alinhadores podem ser removidos durante as refeições. Isso permite que o paciente continue a comer seus alimentos favoritos sem preocupações, desde que siga as orientações de uso para garantir o sucesso do tratamento.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev text-emerald-950"></div>
+            <div class="swiper-button-next text-emerald-950"></div>
+            <div class="swiper-pagination "></div>
+        </div>
+    </section>
     <!-- About Section -->
-    <section class="p-2 sm:p-6 md:p-12 lg:p-16 bg-gray-50">
+    <section class="p-2 sm:p-6 md:p-12 lg:p-16 bg-gray-100">
         <div class="relative grid lg:grid-cols-2 gap-4">
             <div class="lg:ml-12">
                 <img alt="Smiling doctor in a white coat" class="rounded-lg shadow-md w-full"
-                    src="doutor.jpg"
+                    src="./images/doutor.jpg"
                     width="600" />
             </div>
             <div class="bg-emerald-950 rounded-lg text-white p-6 lg:p-12 lg:-ml-12 lg:mt-9 lg:-mb-9">
@@ -256,8 +356,8 @@
                     <p class="text-4xl lg:text-base">
                         Se você deseja ser um parceiro, entre em contato através do nosso whatsapp!
                     </p>
-                    <div class="my-8">
-                        <a class="text-4xl lg:text-base bg-green-700 text-white px-6 py-4 rounded-full items-center"
+                    <div class="my-8 lg:my-4">
+                        <a class="text-4xl lg:text-base bg-green-700 text-white px-6 py-4 lg:px-4 lg:py-2 rounded-full items-center"
                             href="https://api.whatsapp.com/send?phone=5555119976412&text=Ol%C3%A1!%20Sou%20ortodontista%20e%20estou%20entrando%20em%20contato%20atrav%C3%A9s%20do%20site%20e%20quero%20saber%20mais%20sobre%20o%20alinhador."
                             target="_blank">
                                 <i class="fab fa-whatsapp mr-2"></i>
@@ -272,8 +372,8 @@
                     <p class="text-4xl lg:text-base">
                         Entre em contato e marque uma consulta!
                     </p>
-                    <div class="my-8">
-                        <a class="text-4xl lg:text-base bg-green-700 text-white px-6 py-4 rounded-full items-center"
+                    <div class="my-8 lg:my-4">
+                        <a class="text-4xl lg:text-base bg-green-700 text-white px-6 py-4 lg:px-4 lg:py-2 rounded-full items-center"
                             href="https://api.whatsapp.com/send?phone=5555119976412&text=Ol%C3%A1!%20Estou%20entrando%20em%20contato%20atrav%C3%A9s%20do%20site%20e%20quero%20saber%20mais%20sobre%20o%20alinhador."
                             target="_blank">
                                 <i class="fab fa-whatsapp mr-2"></i>
@@ -307,30 +407,7 @@
             }
         }
     });
-/*
-    window.onload = function() {
-        const largura = window.innerWidth;
-        if (largura > 1024) {
-            alert(largura)
-            if (mobileMenu.style.display === "block") {
-                mobileMenu.style.display = "none";
-            }
-        }
-    };
-*/
-</script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-    var swiper = new Swiper(".swiper", {
-        effect:"carousel",
-        grabCursor:!0,
-        loop:!0,
-        slidesPerView:"auto",
-        navigation:
-        {nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},
-        pagination:{el:".swiper-pagination"},
-        autoplay:{delay:9e3}
-    });
+
 </script>
 
 </html>
