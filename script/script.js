@@ -111,11 +111,11 @@ const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        navbar.classList.remove('bg-gray-300');
+        navbar.classList.remove('bg-gray-200');
         navbar.classList.add('bg-gray-50');
       } else {
         navbar.classList.remove('bg-gray-50');
-        navbar.classList.add('bg-gray-300');
+        navbar.classList.add('bg-gray-200');
       }
     });
   },
