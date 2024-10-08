@@ -94,6 +94,7 @@ new e(".swiper-about", {
   pagination: { el: ".swiper-pagination" },
   autoplay: { delay: 9e3 },
 });
+
 new Swiper(".swiper-banner", {
     effect:"carousel",
     grabCursor:!0,
@@ -101,6 +102,4 @@ new Swiper(".swiper-banner", {
     slidesPerView:"auto",
     autoplay:{delay:9e3}
 });
-
-
 
