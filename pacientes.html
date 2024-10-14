@@ -49,6 +49,20 @@
         .text-secondary {
             color: #5CE1E6;
         }
+
+        /* Estilos iniciais */
+        .animada {
+        opacity: 0;
+        transform: translateX(-350px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        /* Estilos quando a section estiver visível */
+        .ativa {
+        opacity: 1;
+        transform: translateX(0);
+        }
+
     </style>
 
 </head>
@@ -170,7 +184,7 @@
         </div>
     </header>
         <!-- Beneficios Section -->
-        <section class="p-2 sm:p-6 md:p-12 lg:p-16">
+        <section class="p-2 sm:p-6 md:p-12 lg:p-16 animada">
             <div class="relative grid lg:grid-cols-2 gap-4">
                 <div class="flex items-center">
                     <img alt="Demonstração do alinhador" class="rounded-lg shadow-md w-full"
@@ -188,7 +202,7 @@
             </div>
         </section>
     <!-- com funciona Section -->
-    <section class="p-2 sm:p-6 md:p-12 lg:p-16">
+    <section class="p-2 sm:p-6 md:p-12 lg:p-16 animada">
         <h2 class="text-5xl lg:text-3xl font-bold mb-4 text-center">
             Como funciona o processo?
         </h2>
@@ -276,7 +290,7 @@
         </div>
     </section>
     <!-- com funciona Section -->
-    <section class="p-2 sm:p-6 md:p-12 lg:p-16">
+    <section class="p-2 sm:p-6 md:p-12 lg:p-16 animada">
         
         <div class="swiper swiper-about">
             <div class="swiper-wrapper h-5/6 lg:h-4/6">
@@ -362,7 +376,7 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.295325233989!2d-46.65886400000001!3d-23.5218782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce58096d05314d%3A0x4050e6c5b13ae82c!2sAv.%20Dr.%20Abra%C3%A3o%20Ribeiro%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001133-020!5e0!3m2!1spt-BR!2sbr!4v1727545366164!5m2!1spt-BR!2sbr" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
     <!-- Footer Section -->
-    <section class="bg-gray-50 py-16">
+    <section class="bg-gray-50 py-16 animada">
         <div class="container mx-auto text-center px-4">
             <h2 class="text-4xl lg:text-3xl font-bold mb-8">
                 Fit Aligner é  referência em tecnologia
@@ -460,6 +474,23 @@ const observer = new IntersectionObserver(
 );
 
 observer.observe(section2);
+
+//animação
+document.addEventListener("scroll", function() {
+  const sections = document.querySelectorAll(".animada");
+
+  sections.forEach(function(section) {
+    const position = section.getBoundingClientRect();
+
+    // Verifica se a section está visível na viewport
+    if (position.top < window.innerHeight && position.bottom >= 0) {
+      section.classList.add("ativa");
+    } else {
+      section.classList.remove("ativa"); // Remover se quiser que a animação repita
+    }
+  });
+});
+
 
 </script>
 
