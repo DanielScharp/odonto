@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="columns">
+          <div class="column is-half">
+            <form action="https://api.staticforms.xyz/submit" method="post" id="staticform">
+              <!-- Replace with your StaticForms accessKey -->
+              <input type="hidden" name="accessKey" value="1b3b06df-705d-4b27-bafe-389918d353b0">
+              <input type="hidden" name="subject" value="Test from jsfiddle">
+            
+              <h1>Análise de Caso</h1>
+              <div class="field">
+                <label class="label">Dentista</label>
+                <div class="control">
+                  <input class="input" type="text" name="$Dentista" placeholder="Dentista" required>
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">CROSP</label>
+                <div class="control">
+                  <input class="input" type="text" name="$CROSP" placeholder="CROSP" required>
+                </div>
+              </div>
+              <h1>Paciente</h1>
+              <div class="field">
+                <label class="label">Nome do Paciente</label>
+                <div class="control">
+                  <input class="input" type="text" name="$Nome do Paciente" placeholder="Nome do Paciente" required>
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">CPF do Paciente</label>
+                <div class="control">
+                  <input class="input" type="text" name="$CPF do Paciente" placeholder="CPF do Paciente" required>
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Data de Nascimento</label>
+                <div class="control">
+                  <input class="input" type="date" name="$Data de Nascimento" placeholder="Data de Nascimento" required>
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Celular do Paciente</label>
+                <div class="control">
+                  <input class="input" type="text" name="$Celular do Paciente" placeholder="Celular do Paciente" required>
+                </div>
+              </div>
+              <h1>Coleta de dados clínico para o estudo do caso</h1>
+              <div class="field">
+                <label class="label">Queixa(s) principal (ais)</label>
+                <div class="control">
+                  <textarea class="textarea" type="text" name="$Queixa(s) principal (ais)" placeholder="Queixa(s) principal (ais)" required></textarea>
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">O paciente aceita tratamento apenas da queixa principal mesmo que não seja possível chegar nas seis chaves de Andrews?   </label>
+                <div class="control">
+                    <input type="radio" name="$O paciente aceita tratamento apenas da queixa principal mesmo que não seja possível chegar nas seis chaves de Andrews?" value="Sim">
+                    <input type="radio" name="$O paciente aceita tratamento apenas da queixa principal mesmo que não seja possível chegar nas seis chaves de Andrews?" value="Não">
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Qual é a classificação de Angle de molares?</label>
+                <div class="control">
+                    <input type="radio" name="$Qual é a classificação de Angle de molares?" value="Direita">
+                    <input type="radio" name="$Qual é a classificação de Angle de molares?" value="Esquerda">
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Qual é a classificação de Angle de caninos?</label>
+                <div class="control">
+                    <input type="radio" name="$Qual é a classificação de Angle de caninos?" value="Direita">
+                    <input type="radio" name="$Qual é a classificação de Angle de caninos?" value="Esquerda">
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Tem a linha mediana desviada?</label>
+                <div class="control">
+                    <input type="radio" name="$Tem a linha mediana desviada?" value="Sim">
+                    <input type="radio" name="$Tem a linha mediana desviada?" value="Não">
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Se não é Classe I, neste tratamento é preciso colocar em chave?</label>
+                <div class="control">
+                    <input type="radio" name="$Se não é Classe I, neste tratamento é preciso colocar em chave?" value="Sim">
+                    <input type="radio" name="$Se não é Classe I, neste tratamento é preciso colocar em chave?" value="Não">
+                </div>
+              </div>
+              <h1>
+                O paciente aceita o procedimento abaixo? 
+              </h1>
+              <div class="field">
+                <label class="label">Desgaste interproximal</label>
+                <div class="control">
+                    <input type="radio" name="$Desgaste interproximal" value="Sim">
+                    <input type="radio" name="$Desgaste interproximal" value="Não">
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Elástico de Classe II ou III</label>
+                <div class="control">
+                    <input type="radio" name="$Elástico de Classe II ou III" value="Sim">
+                    <input type="radio" name="$Elástico de Classe II ou III" value="Não">
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Aumento da arcada</label>
+                <div class="control">
+                    <input type="radio" name="$Aumento da arcada" value="Sim">
+                    <input type="radio" name="$Aumento da arcada" value="Não">
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Manutenção do desvio da linha média</label>
+                <div class="control">
+                    <input type="radio" name="$Manutenção do desvio da linha média" value="Sim">
+                    <input type="radio" name="$Manutenção do desvio da linha média" value="Não">
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Extração</label>
+                <div class="control">
+                    <input type="radio" name="$Extração" value="Sim">
+                    <input type="radio" name="$Extração" value="Não">
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Aceita usar anexos em dentes anteriores</label>
+                <div class="control">
+                    <input type="radio" name="$Aceita usar anexos em dentes anteriores" value="Sim">
+                    <input type="radio" name="$Aceita usar anexos em dentes anteriores" value="Não">
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Reduzir Sobressaliência</label>
+                <div class="control">
+                    <input type="radio" name="$Reduzir Sobressaliência" value="Sim">
+                    <input type="radio" name="$Reduzir Sobressaliência" value="Não">
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Reduzir Sobremordida</label>
+                <div class="control">
+                    <input type="radio" name="$Reduzir Sobremordida" value="Sim">
+                    <input type="radio" name="$Reduzir Sobremordida" value="Não">
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Nesse espaço, escreva qualquer observação que considere importante para o planejamento deste caso.</label>
+                <div class="control">
+                    <input type="text" name="$Nesse espaço, escreva qualquer observação que considere importante para o planejamento deste caso." placeholder="Sua resposta">
+                </div>
+              </div>
+              <button class="button is-primary" type="Submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script>
+        // find elements
+        $("#staticform").submit(function(event) {
+            event.preventDefault();
+            var teste = $("#staticform").serialize(); //accessKey=1b3b06df-705d-4b27-bafe-389918d353b0&subject=Test%20from%20jsfiddle&name=Daniel%20Gregorio%20Maia%20Scharp&email=daniel.scharp%40hotmail.com&message=t3
+            console.log(teste)
+            $.ajax({
+                url: 'https://api.staticforms.xyz/submit', // url where to submit the request
+                type: "POST", // type of action POST || GET
+                dataType: 'json', // data type
+                data: teste, // post data || get data
+                success: function(result) {
+                    // you can see the result from the console
+                    // tab of the developer tools
+                    console.log(result);
+                },
+                error: function(xhr, resp, text) {
+                    console.log(xhr, resp, text);
+                }
+            })
+        });
+
+      </script>
+</body>
+</html>
