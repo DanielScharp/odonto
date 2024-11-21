@@ -1,0 +1,483 @@
+<html>
+
+<head>
+    <title>
+        Fit Aligner
+    </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="modulepreload" href="./script/swiper-opacity.js">
+    <script src="./script/tailwindcss3-4-5.js"> </script>
+    <script src="./script/swiper-bundle.js"></script>
+    <script type="module" crossorigin src="./script/script.js"></script>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .menu-item {
+            border-bottom: 2px solid #022c22;
+        }
+        
+        .menu-item:hover {
+            border-bottom: 2px solid #fff;
+            
+            transition: .25s ease;
+            transition-duration: 0.25s;
+            transition-timing-function: ease;
+            transition-delay: 0s;
+        }
+
+        .bg-principal {
+            background-color: #5271FF;
+        }
+
+        .bg-secondary {
+            background-color: #5CE1E6;
+        }
+        .text-principal {
+            color: #5271FF;
+        }
+
+        .text-secondary {
+            color: #5CE1E6;
+        }
+
+        /* Estilos iniciais */
+        .animada {
+        opacity: 0;
+        transform: translateX(-350px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        /* Estilos quando a section estiver visível */
+        .ativa {
+        opacity: 1;
+        transform: translateX(0);
+        }
+
+    </style>
+
+</head>
+<body>
+        <a class="text-white"
+            href="https://api.whatsapp.com/send?phone=551130906066&text=Ol%C3%A1!%20Estou%20entrando%20em%20contato%20atrav%C3%A9s%20do%20site%20e%20quero%20saber%20mais%20sobre%20o%20alinhador."
+            target="_blank"
+        >
+            <div class="bg-green-700 fixed bottom-4 right-4 z-50 flex justify-center items-center w-32 h-32 hover:w-36 hover:h-36 lg:w-16 lg:h-16 lg:hover:w-20 lg:hover:h-20 transition-all duration-300  cursor-pointer text-6xl lg:text-4xl hover:text-7xl lg:hover:text-5xl " style="border-radius: 100%;">
+                    <i class="fab fa-whatsapp"></i>
+            </div>
+        </a>
+    <!-- Sticky Menu -->
+    <nav id="navbar" class="bg-gray-50 fixed w-full z-50 transition-colors duration-500 ease-in-out">
+        <div class="container mx-auto flex justify-between items-center py-4 lg:py-0 px-4">
+            <a href="./pacientes.html" class="font-bold">
+                <img alt="Self Logo" class="h-40 lg:h-20 inline" src="./images/Logo250x150transparente.png" />
+            </a>
+            <div>
+                <div class="flex-1 flex justify-center items-stretch justify-start">
+                    <div class="hidden lg:block">
+                        <ul class="flex gap-8 items-center">
+                            <li>
+                                <a href="./pacientes.html">
+                                    <div class="bg-principal text-white px-9 lg:px-6 py-6 lg:py-2 rounded-lg hover:-translate-y-1 transition ease-in-out cursor-pointer">
+                                        Sou paciente
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./ortodontistas.html">
+                                    <div class="bg-principal text-white px-9 lg:px-6 py-6 lg:py-2 rounded-lg hover:-translate-y-1 transition ease-in-out cursor-pointer">
+                                        Sou dentista
+                                    </div>
+                                </a>
+                            </li>
+                  
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex items-center lg:hidden">
+                    <!-- Botão do Menu Hambúrguer -->
+                    <button id="menu-button"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                        aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Abrir menu</span>
+                        <svg class="block h-20 lg:h-6 w-20 lg:w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+        <!-- Menu móvel -->
+        <div class="sm:hidden" id="mobile-menu" style="display: none;">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <ul class="flex flex-col gap-8 items-center text-5xl text-center my-6">
+                    <li>
+                        <div class="bg-principal text-white px-9 lg:px-6 py-6 lg:py-2 rounded-lg hover:-translate-y-1 transition ease-in-out cursor-pointer">
+                            <a href="./pacientes.html">Sou paciente</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bg-principal text-white px-9 lg:px-6 py-6 lg:py-2 rounded-lg hover:-translate-y-1 transition ease-in-out cursor-pointer">
+                            <a href="./ortodontistas.html">Sou dentista</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Header Section -->
+    <header class="text-white main-carousel relative max-h-full" id="section2">
+        <!-- Slider main container -->
+        <div class="swiper swiper-banner">
+            <!-- Additional required wrapper -->
+            <div class="mt-16 swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="relative carousel-cell">
+                        <video autoplay class="w-full h-5/6 object-cover items-center object-top" height="700" loop muted
+                            poster="fotoVideo.PNG">
+                            <source src="./videos/Video 2.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="absolute inset-0 mt-96 flex flex-col items-center justify-center text-center px-4">
+                            <h1 class="text-8xl lg:text-5xl font-bold">
+                                Sorriso do seu sonhos <br /> com o conforto que você merece
+                            </h1>
+                            <p class="mt-4 text-4xl lg:text-2xl">
+                                Corrija seu sorriso de forma discreta, confortável e sem comprometer sua rotina.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Slides -->
+                <div class="swiper-slide max-h-full">
+                    <div class="relative carousel-cell">
+                        <video autoplay class="w-full h-5/6 object-cover object-top" height="700" loop muted>
+                            <source src="./videos/Video 3.mp4" type="video/mp4" />
+                            Y'our browser does not support the video tag.
+                        </video>
+                        <div class="absolute inset-0 mt-96  flex flex-col items-center justify-center text-center px-4">
+                            <h1 class="text-8xl lg:text-5xl font-bold">
+                                Sorria com confiança: Descubra os <br /> 
+                                benefícios dos alinhadores Fit Aligner
+                            </h1>
+                            <p class="mt-4 text-4xl lg:text-2xl">
+                                Conheça os alinhadores transparentes Fit Aligner e viva cada momento de liberdade e auto estima. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+    <!-- com funciona Section -->
+    <section class="p-2 sm:p-6 md:p-12 lg:p-16 animada">
+        <h2 class="text-5xl lg:text-3xl font-bold mb-4 text-center text-principal">
+            Como iniciar o tratamento?
+        </h2>
+        <div class="swiper swiper-about">
+            <div class="swiper-wrapper max-h-max">
+                <div class="swiper-slide max-h-max">
+                    <div class="swiper-carousel-animate-opacity">
+                        <div class="w-full h-full bg-principal rounded-lg max-h-max">
+                            <img src="./images/Avaliação completa.jpg" alt="" class="w-full max-h-5/6 lg:max-h-4/6 rounded-t-lg object-cover">
+                            <div class="w-full text-white py-6 px-12">
+                                <h2 class="text-5xl lg:text-2xl text-center">1 - Avaliação completa no Dentista</h2>
+                                <hr class="my-6" />
+                                <p class="text-4xl lg:text-lg ">
+                                    Após uma avaliação completa,
+                                    seu dentista solicitará os
+                                    exames necessários para criar
+                                    um plano de tratamento
+                                    personalizado.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide max-h-max">
+                    <div class="swiper-carousel-animate-opacity">
+                        <div class="w-full h-full bg-principal rounded-lg max-h-max">
+                            <img src="./images/Confecção dos Alinhadores.jpg" alt="" class="w-full max-h-5/6 lg:max-h-4/6 rounded-t-lg object-cover">
+                            <div class="w-full text-white py-6 px-12">
+                                <h2 class="text-5xl lg:text-2xl text-center">2 - Confecção dos alinhadores</h2>
+                                <hr class="my-6" />
+                                <p class="text-4xl lg:text-lg ">
+                                    Seus alinhadores serão 
+                                    encaminhados para confecção 
+                                    sob medida, exclusivo 
+                                    para seu tratamento. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide max-h-max">
+                    <div class="swiper-carousel-animate-opacity">
+                        <div class="w-full h-full bg-principal rounded-lg max-h-max">
+                            <img src="./images/Acompanhamento.jpg" alt="" class="w-full max-h-5/6 lg:max-h-4/6 rounded-t-lg object-cover">
+                            <div class="w-full text-white py-6 px-12">
+                                <h2 class="text-5xl lg:text-2xl text-center">3 - Acompanhamento</h2>
+                                <hr class="my-6" />
+                                <p class="text-4xl lg:text-lg ">
+                                    Durante o tratamento, seu 
+                                    Dentista irá acompanhar 
+                                    seu progresso a cada etapa, 
+                                    garantindo resultados 
+                                    precisos e eficientes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide max-h-max">
+                    <div class="swiper-carousel-animate-opacity">
+                        <div class="w-full h-full bg-principal rounded-lg max-h-max">
+                            <img src="./images/Sorria Mais - se preocupe menos.jpg" alt="" class="w-full max-h-5/6 lg:max-h-4/6 rounded-t-lg object-cover">
+                            <div class="w-full text-white py-6 px-12">
+                                <h2 class="text-5xl lg:text-2xl text-center">4 - Sorria mais, se preocupe menos</h2>
+                                <hr class="my-6" />
+                                <p class="text-4xl lg:text-lg">
+                                    Com o Fit Aligner, o tratamento ortodôntico
+                                    se transforma em uma experiência única.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev text-white bg-principal h-16 w-16" style="border-radius: 100%;"></div>
+            <div class="swiper-button-next text-white bg-principal h-16 w-16" style="border-radius: 100%;"></div>
+        </div>
+    </section>
+    <!-- com funciona Section -->
+    <section class="p-2 sm:p-6 md:p-12 lg:p-16 animada">
+        <h2 class="text-5xl lg:text-3xl font-bold mb-4 text-center text-principal">
+            Benefícios Fit Aligner
+        </h2>
+        <div class="swiper swiper-about">
+            <div class="swiper-wrapper max-h-max min-h-min">
+                <div class="swiper-slide max-h-max min-h-min">
+                    <div class="swiper-carousel-animate-opacity">
+                        <div class="w-full h-full bg-principal rounded-lg max-h-max">
+                            <img src="./images/Aparelho invisivel.jpg" alt="" class="w-full max-h-5/6 lg:max-h-4/6 rounded-t-lg object-cover">
+                            <div class="w-full text-white py-6 lg:py-5 px-12">
+                                <h2 class="text-5xl lg:text-2xl text-center">1 - Aparelho Invisível</h2>
+                                <hr class="my-6 lg:my-5" />
+                                <p class="text-4xl lg:text-lg ">
+                                    O Fit Aligner é produzido com material transparente, tornando-os 
+                                    praticamente imperceptíveis quando usados.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide max-h-max min-h-min">
+                    <div class="swiper-carousel-animate-opacity">
+                        <div class="w-full h-full bg-principal rounded-lg max-h-max">
+                            <img src="./images/mais conforto.jpg" alt="" class="w-full max-h-5/6 lg:max-h-4/6 rounded-t-lg object-cover">
+                            <div class="w-full text-white py-6 lg:py-5 px-12">
+                                <h2 class="text-5xl lg:text-2xl text-center">2 - Conforto</h2>
+                                <hr class="my-6 lg:my-5" />
+                                <p class="text-4xl lg:text-lg ">
+                                    Feitos sob medida, os alinhadores são moldados especificamente pra cada 
+                                    paciente, o que garante um encaixe perfeito e confortável.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide max-h-max min-h-min">
+                    <div class="swiper-carousel-animate-opacity">
+                        <div class="w-full h-full bg-principal rounded-lg max-h-max">
+                            <img src="./images/Removível.jpg" alt="" class="w-full max-h-5/6 lg:max-h-4/6 rounded-t-lg object-cover">
+                            <div class="w-full text-white py-6 lg:py-5 px-12">
+                                <h2 class="text-5xl lg:text-2xl text-center">3 - Removível</h2>
+                                <hr class="my-6 lg:my-5" />
+                                <p class="text-4xl lg:text-lg ">
+                                    Uma das maiores vantagens dos 
+                                    alinhadores é que eles são removíveis. 
+                                    O paciente pode tirá-los para comer, 
+                                    beber e fazer a limpeza dos dentes, o 
+                                    que proporciona mais liberdade e 
+                                    conveniência no dia a dia.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide max-h-max min-h-min">
+                    <div class="swiper-carousel-animate-opacity">
+                        <div class="w-full h-full bg-principal rounded-lg max-h-max">
+                            <img src="./images/facilidade na higiene bucal.jpg" alt="" class="w-full max-h-5/6 lg:max-h-4/6 rounded-t-lg object-cover">
+                            <div class="w-full text-white py-6 lg:py-5 px-12">
+                                <h2 class="text-5xl lg:text-2xl text-center">4 - Facilidade na Higiene Bucal</h2>
+                                <hr class="my-6 lg:my-5" />
+                                <p class="text-4xl lg:text-lg ">
+                                    Com os alinhadores removíveis, é possível escovar os 
+                                    dentes e usar o fio dental de maneira habitual, sem a 
+                                    necessidade de contornar fios e brackets.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide max-h-max min-h-min">
+                    <div class="swiper-carousel-animate-opacity">
+                        <div class="w-full h-full bg-principal rounded-lg max-h-max">
+                            <img src="./images/14.jpg" alt="" class="w-full max-h-5/6 lg:max-h-4/6 rounded-t-lg object-cover">
+                            <div class="w-full text-white py-6 lg:py-5 px-12">
+                                <h2 class="text-5xl lg:text-2xl text-center">5 - Tempo de tratamento previsível</h2>
+                                <hr class="my-6 lg:my-5" />
+                                <p class="text-4xl lg:text-lg ">
+                                    Confie na tecnologia Fit Aligner para um tratamento 
+                                    ortodôntico com tempo definido e resultados surpreendentes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev text-white bg-principal h-16 w-16" style="border-radius: 100%;"></div>
+            <div class="swiper-button-next text-white bg-principal h-16 w-16" style="border-radius: 100%;"></div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="bg-gray-50 py-16 animada">
+        <div class="container mx-auto text-center px-4">
+            <h2 class="text-4xl lg:text-3xl font-bold mb-8  text-principal">
+                Fit Aligner é  referência em tecnologia
+            </h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mx-8">
+
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-4xl lg:text-xl font-semibold mb-2">
+                        Para Pacientes
+                    </h3>
+                    <p class="text-4xl lg:text-base">
+                        Entre em contato e descubra qual o Dentista credenciado mais próximo de você
+                    </p>
+                    <div class="my-8 lg:my-4">
+                        <a class="text-4xl lg:text-base bg-green-700 text-white px-6 py-4 lg:px-4 lg:py-2 rounded-full items-center"
+                            href="https://api.whatsapp.com/send?phone=551130906066&text=Ol%C3%A1!%20Estou%20entrando%20em%20contato%20atrav%C3%A9s%20do%20site%20e%20quero%20saber%20mais%20sobre%20o%20alinhador."
+                            target="_blank">
+                                <i class="fab fa-whatsapp mr-2"></i>
+                                WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-4xl lg:text-xl font-semibold mb-2">
+                        Para Ortodontistas
+                    </h3>
+                    <p class="text-4xl lg:text-base">
+                        Se você deseja ser um parceiro, entre em contato através do nosso whatsapp!
+                    </p>
+                    <div class="my-8 lg:my-4">
+                        <a class="text-4xl lg:text-base bg-green-700 text-white px-6 py-4 lg:px-4 lg:py-2 rounded-full items-center"
+                            href="https://api.whatsapp.com/send?phone=551130906066&text=Ol%C3%A1!%20Sou%20ortodontista%20e%20estou%20entrando%20em%20contato%20atrav%C3%A9s%20do%20site%20e%20quero%20saber%20mais%20sobre%20o%20alinhador."
+                            target="_blank">
+                                <i class="fab fa-whatsapp mr-2"></i>
+                                WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- Products Section -->
+        <section class="mt-16 w-full">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.301111391807!2d-46.662238!3d-23.52167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef7088d946c6d%3A0x31fe3dfe5611430d!2sAv.%20Marqu%C3%AAs%20de%20S%C3%A3o%20Vicente%2C%20230%20-%20V%C3%A1rzea%20da%20Barra%20Funda%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001139-000!5e0!3m2!1spt-BR!2sbr!4v1729701206721!5m2!1spt-BR!2sbr" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    <footer class="bg-principal text-white w-full lg:flex lg:justify-around text-4xl lg:text-base p-6 items-center text-center lg:text-start">
+        <div>
+            <p>© 2024 LAB PRIME ODONTO LTDA. Todos os direitos reservados | 57.887.609/0001-41</p>
+            <p>Avenida Marquês de São Vicente, 230 - 18° andar - Barra Funda São Paulo-SP CEP 01139-000 Brasil</p>
+            <p>atendimento@fitaligner.com.br</p>
+        </div>
+        <a href="#" class="flex justify-center items-center mt-6 lg:mt-0">
+            <i class="fab fa-instagram mr-2  text-6xl lg:text-2xl"></i>instagram
+        </a>
+    </footer>
+
+</body>
+
+<script>
+    // Script para alternar o menu
+    const button = document.getElementById('menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    button.addEventListener('click', () => {
+        if (mobileMenu.style.display === "none" || mobileMenu.style.display === "") {
+            mobileMenu.style.display = "block";
+        } else {
+            mobileMenu.style.display = "none";
+        }
+    });
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 1024) {
+            if (mobileMenu.style.display === "block") {
+                mobileMenu.style.display = "none";
+            }
+        }
+    });
+
+    //alterar a cor do navbar a partir da segunda section
+const navbar = document.getElementById('navbar');
+const section2 = document.getElementById('section2');
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navbar.classList.remove('bg-gray-200');
+        navbar.classList.add('bg-gray-50');
+      } else {
+        navbar.classList.remove('bg-gray-50');
+        navbar.classList.add('bg-gray-200');
+      }
+    });
+  },
+  {
+    threshold: 0.1, // Trigger when 10% of section2 is visible
+  }
+);
+
+observer.observe(section2);
+
+//animação
+document.addEventListener("scroll", function() {
+  const sections = document.querySelectorAll(".animada");
+
+  sections.forEach(function(section) {
+    const position = section.getBoundingClientRect();
+
+    // Verifica se a section está visível na viewport
+    if (position.top < window.innerHeight && position.bottom >= 0) {
+      section.classList.add("ativa");
+    } else {
+      section.classList.remove("ativa"); // Remover se quiser que a animação repita
+    }
+  });
+});
+
+</script>
+
+</html>
