@@ -89,10 +89,13 @@
     }
 
     h2 {
-      margin-top: 1rem;
       color: #5271FF;
     }
 
+    form h2 {
+      margin-top: 1rem;
+    }
+    
     button {
       width: 100%;
       padding: 0.75rem;
@@ -123,13 +126,16 @@
     <div class="container">
         <div class="columns">
           <div class="column is-half">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <img src="/images/logo.jpeg" alt="" width="100px" height="100px">
+              <h2>Cadastro de Cliente</h2>
+            </div>
             <form action="https://api.staticforms.xyz/submit" method="post" id="staticform">
               <!-- Replace with your StaticForms accessKey -->
               <!-- cba5a16d-4a65-410b-bdd4-99b0b5af66cb -->
               <input type="hidden" name="accessKey" value="cfa6b1a3-0569-48c1-ad7e-9e899c68a5e5">
-              <input type="hidden" name="subject" value="Cadastro Cliente">
+              <input type="hidden" name="subject" value="Cadastro de Cliente">
 
-              <h2>Cadastro Cliente</h2>
               <div class="field">
                 <label class="label">Nome Completo (sem abreviações)</label>
                 <div class="control">
