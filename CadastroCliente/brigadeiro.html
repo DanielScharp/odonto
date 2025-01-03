@@ -30,6 +30,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        color: #5271FF;
+        margin-bottom: 2rem;
       }
 
       .cabecalho {
@@ -72,6 +74,10 @@
 
       }
 
+      .containerRadios h3{
+        color: #5271FF;
+      }
+
       .containerRadios div{
         display: flex;
         justify-content: center;
@@ -99,48 +105,51 @@
         <img src="../images/LogoTransparente.png" alt="">
       </div>
       <div class="cabecalho">
-        <div>(11) 0988-0982</div>
-        <div>@fit</div>
+        <div>(11) 3090-6066</div>
+        <div>@fitaligneroficial</div>
         <div>São Paulo - SP</div>
       </div>
     </header>
     <form action="https://api.staticforms.xyz/submit" method="post" id="staticform">
+      <input type="hidden" name="accessKey" value="cfa6b1a3-0569-48c1-ad7e-9e899c68a5e5">
+      <input type="hidden" name="subject" value="Análise de Caso">
+
       <div class="containerDados">
-        <input type="text" placeholder="Nome completo:" />
-        <input type="text" placeholder="CPF:" />
-        <input type="text" placeholder="RG:" />
-        <input type="text" placeholder="Data de Nascimento:" />
-        <input type="text" placeholder="Telefone Celular:" />
-        <input type="text" placeholder="E-mail:" />
-        <input type="text" placeholder="Rua/Avenida/Travessa/Praça:" />
-        <input type="text" placeholder="Número:" />
-        <input type="text" placeholder="Complemento:" />
+        <input type="text" name="$Nome completo" placeholder="Nome completo:" />
+        <input type="text" name="$CPF" placeholder="CPF:" />
+        <input type="text" name="$RG" placeholder="RG:" />
+        <input type="text" name="$Data de Nascimento" placeholder="Data de Nascimento:" />
+        <input type="text" name="$Telefone Celular" placeholder="Telefone Celular:" />
+        <input type="text" name="$E-mail" placeholder="E-mail:" />
+        <input type="text" name="$Rua" placeholder="Rua/Avenida/Travessa/Praça:" />
+        <input type="text" name="$Numero" placeholder="Número:" />
+        <input type="text" name="$Complemento" placeholder="Complemento:" />
       </div>
       <div class="containerRadios">
         <h3>Vencimento do boleto</h3>
         <div>
           <input type="radio" />
-          <label for="">Dia 01</label>
+          <label name="$Vencimento do boleto" for="" value="Dia 01">Dia 01</label>
         </div>
         <div>
           <input type="radio" />
-          <label for="">Dia 07</label>
+          <label name="$Vencimento do boleto" for="" value="Dia 07">Dia 07</label>
         </div>
         <div>
           <input type="radio" />
-          <label for="">Dia 10</label>
+          <label name="$Vencimento do boleto" for="" value="Dia 10">Dia 10</label>
         </div>
         <div>
           <input type="radio" />
-          <label for="">Dia 15</label>
+          <label name="$Vencimento do boleto" for="" value="Dia 15">Dia 15</label>
         </div>
         <div>
           <input type="radio" />
-          <label for="">Dia 21</label>
+          <label name="$Vencimento do boleto" for="" value="Dia 21">Dia 21</label>
         </div>
         <div>
           <input type="radio" />
-          <label for="">Dia 27</label>
+          <label name="$Vencimento do boleto" for="" value="Dia 27">Dia 27</label>
         </div>
       </div>
       <div class="button" >
