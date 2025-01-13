@@ -70,7 +70,7 @@ main form div:nth-child(1)::before {
   content: " ";
   width: 125px;
   height: 80.5px;
-  background-image: url(../images/LogoTransparente.png);
+  background-image: url(../images/alinhador-smileguide.png);
   background-size: 100%;
   position: absolute;
   right: -10px;
