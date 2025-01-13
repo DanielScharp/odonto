@@ -85,6 +85,11 @@ main form .containerRadios {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
+}
+
+main form .containerRadios h3{
+  color: #5271FF;
 }
 
 
@@ -122,12 +127,8 @@ main form .containerRadios div {
     content: " ";
     width: 250px;
     height: 161px;
-    background-image: url(./alinhador-smileguide.png);
-    background-size: 100%;
-    position: absolute;
     right: 10%;
     margin-top: -20px;
-    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
   }
   
 }
