@@ -68,7 +68,9 @@ main {
   width: 100%;
 }
 
-main h3:first-child {
+main h2{
+  color: #5271FF;
+
   text-align: center;
   margin: 1rem 0;
 }
