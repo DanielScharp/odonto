@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="https://fitaligner.com.br/" target="_blank">
+        <img src="https://fitaligner.com.br/images/LogoTransparente.png" alt="" />
+      </a>
+      <div>
+        <div>(11) 3090-6066</div>
+        <div>@fitaligneroficial</div>
+        <div>São Paulo - SP</div>
+      </div>
+    </header>
+    <main>
+      <h2>
+        Análise de Caso
+      </h2>
+      <form id="emailjs-form">
+        <div class="dados">
+          <!-- Replace with your StaticForms accessKey -->
+          <!-- Daniel -->
+          <!-- cba5a16d-4a65-410b-bdd4-99b0b5af66cb -->
+           <!-- fitAlign -->
+           <!-- cfa6b1a3-0569-48c1-ad7e-9e899c68a5e5 -->
+          
+          <input type="text" name="Dentista" placeholder="Dentista:" />
+          <input type="text" name="CROSP" placeholder="CROSP:" />
+          <h3>
+            Dados do Paciente
+          </h2>
+          <input type="text" name="Paciente_Nome" placeholder="Nome:" />
+          <input type="text" name="$Paciente CPF" placeholder="CPF:" />
+          <input
+            type="text"
+            name="$Paciente Data de Nascimento"
+            placeholder="Data de Nascimento:"
+          />
+          <input type="text" name="$Paciente Celular" placeholder="Celular:" />
+          <textarea
+            name="$Queixas Principais"
+            placeholder="Queixa(s) principal (ais):"
+          ></textarea>
+          <input type="file" id="file" name="Anexo" />
+        </div>
+        <div class="radios">
+          <div class="containerRadios">
+            <h3>
+              O paciente aceita tratamento apenas da queixa principal mesmo que
+              não seja possível chegar nas seis chaves de Andrews?
+            </h3>
+            <div>
+              <input
+                type="radio"
+                name="$O paciente aceita tratamento apenas da queixa principal mesmo que não seja possível chegar nas seis chaves de Andrews?"
+                value="Sim"
+              />
+              <label>Sim</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="$O paciente aceita tratamento apenas da queixa principal mesmo que não seja possível chegar nas seis chaves de Andrews?"
+                value="Não"
+              />
+              <label>Não</label>
+            </div>
+          </div>
+          <div class="containerRadios">
+            <h3>
+              Qual é a classificação de Angle de molares?
+            </h3>
+            <div>
+              <input
+                type="radio"
+                name="$Qual é a classificação de Angle de molares?"
+                value="Esquerda"
+              />
+              <label>Esquerda</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="$Qual é a classificação de Angle de molares?"
+                value="Direita"
+              />
+              <label>Direita</label>
+            </div>
+          </div>
+          <div class="containerRadios">
+            <h3>Qual é a classificação de Angle de caninos?</h3>
+            <div>
+              <input
+                type="radio"
+                name="$Qual é a classificação de Angle de caninos?"
+                value="Esquerda"
+              />
+              <label>Esquerda</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="$Qual é a classificação de Angle de caninos?"
+                value="Direita"
+              />
+              <label>Direita</label>
+            </div>
+          </div>
+          <div class="containerRadios">
+            <h3>Tem a linha mediana desviada?</h3>
+            <div>
+              <input
+                type="radio"
+                name="$Tem a linha mediana desviada?"
+                value="Sim"
+              />
+              <label>Sim</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="$Tem a linha mediana desviada?"
+                value="Não"
+              />
+              <label>Não</label>
+            </div>
+          </div>
+          <div class="containerRadios">
+            <h3>
+              Se não é Classe I, neste tratamento é preciso colocar em chave?
+            </h3>
+            <div>
+              <input
+                type="radio"
+                name="$Se não é Classe I, neste tratamento é preciso colocar em chave?"
+                value="Sim"
+              />
+              <label>Sim</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="$Se não é Classe I, neste tratamento é preciso colocar em chave?"
+                value="Não"
+              />
+              <label>Não</label>
+            </div>
+          </div>
+        </div>
+        <div class="radiosTabela">
+          <div class="lineRadios title">
+            <div>
+              <h3>
+                O paciente aceita o procedimento abaixo?
+              </h3>
+            </div>
+            <div><h3>Sim</h3></div>
+            <div><h3>Não</h3></div>
+          </div>
+          <div class="lineRadios">
+            <div>Desgaste interproximal</div>
+            <div>
+              <input
+              type="radio"
+              name="$Desgaste interproximal"
+              value="Sim"
+            />
+            </div>
+              <div>
+                <input
+                type="radio"
+                name="$Desgaste interproximal"
+                value="Não"
+              />
+            </div>
+          </div>
+          <div class="lineRadios">
+            <div>Elástico de Classe II ou III</div>
+            <div>
+              <input
+              type="radio"
+              name="$Elástico de Classe II ou III"
+              value="Sim"
+            />
+            </div>
+              <div>
+                <input
+                type="radio"
+                name="$Elástico de Classe II ou III"
+                value="Não"
+              />
+            </div>
+          </div>
+          <div class="lineRadios">
+            <div>Aumento da arcada</div>
+            <div>
+              <input
+              type="radio"
+              name="$Aumento da arcada"
+              value="Sim"
+            />
+            </div>
+              <div>
+                <input
+                type="radio"
+                name="$Aumento da arcada"
+                value="Não"
+              />
+            </div>
+          </div>
+          <div class="lineRadios">
+            <div>Manutenção do desvio da linha média</div>
+            <div>
+              <input
+              type="radio"
+              name="$Manutenção do desvio da linha média"
+              value="Sim"
+            />
+            </div>
+              <div>
+                <input
+                type="radio"
+                name="$Manutenção do desvio da linha média"
+                value="Não"
+              />
+            </div>
+          </div>
+          <div class="lineRadios">
+            <div>Extração</div>
+            <div>
+              <input
+              type="radio"
+              name="$Extração"
+              value="Sim"
+            />
+            </div>
+              <div>
+                <input
+                type="radio"
+                name="$Extração"
+                value="Não"
+              />
+            </div>
+          </div>
+          <div class="lineRadios">
+            <div>Aceita usar anexos em dentes anteriores</div>
+            <div>
+              <input
+              type="radio"
+              name="$Aceita usar anexos em dentes anteriores"
+              value="Sim"
+            />
+            </div>
+              <div>
+                <input
+                type="radio"
+                name="$Aceita usar anexos em dentes anteriores"
+                value="Não"
+              />
+            </div>
+          </div>
+          <div class="lineRadios">
+            <div>Reduzir Sobressaliência</div>
+            <div>
+              <input
+              type="radio"
+              name="$Reduzir Sobressaliência"
+              value="Sim"
+            />
+            </div>
+              <div>
+                <input
+                type="radio"
+                name="$Reduzir Sobressaliência"
+                value="Não"
+              />
+            </div>
+          </div>
+          <div class="lineRadios">
+            <div>Reduzir Sobremordida</div>
+            <div>
+              <input
+              type="radio"
+              name="$Reduzir Sobremordida"
+              value="Sim"
+            />
+            </div>
+              <div>
+                <input
+                type="radio"
+                name="$Reduzir Sobremordida"
+                value="Não"
+              />
+            </div>
+          </div>
+        </div>
+
+        <textarea
+        name="$Nesse espaço, escreva qualquer observação que considere importante para o planejamento deste caso."
+        placeholder="Nesse espaço, escreva qualquer observação que considere importante para o planejamento deste caso."
+      ></textarea>
+
+        <div class="btnEnviar">
+          <button type="submit">ENVIAR</button>
+        </div>
+      </form>
+    </main>
+
+    <!-- Modal -->
+    <div id="backdrop"></div>
+    <div id="modalConfirmacao">
+        <h2>Cadastro enviado com sucesso!</h2>
+        <button id="fecharModal">Fechar</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+      // Inicializa o EmailJS
+      (function () {
+        emailjs.init('9e7M8L2ej0tpLcsjq'); // Substitua pela sua Public Key do EmailJS
+      })();
+    
+      document.getElementById('emailjs-form').addEventListener('submit', function (event) {
+        event.preventDefault(); // Impede o envio padrão do formulário
+    
+        const form = this;
+        const formData = new FormData(form);
+    
+        // Cria o objeto para enviar via EmailJS
+        const data = {};
+    
+        // Adiciona os campos do formulário ao objeto `data`
+        formData.forEach((value, key) => {
+          data[key] = value;
+        });
+    
+        // Verifica se há anexo
+        const fileInput = document.querySelector('input[type="file"]');
+        if (fileInput && fileInput.files.length > 0) {
+          const file = fileInput.files[0];
+          const reader = new FileReader();
+    
+          reader.onload = function () {
+            // Converte o anexo para Base64
+            data.attachment = reader.result;
+    
+            // Envia o formulário via EmailJS
+            enviarEmail(data, form);
+          };
+    
+          // Lê o arquivo como Base64
+          reader.readAsDataURL(file);
+        } else {
+          // Caso não tenha anexo, envia sem o campo `attachment`
+          enviarEmail(data, form);
+        }
+      });
+    
+      function enviarEmail(data, form) {
+        emailjs
+          .send('service_usl13u5', 'template_0jmj67a', data)
+          .then(
+            function (response) {
+              alert('Formulário enviado com sucesso!');
+              form.reset(); // Reseta o formulário após o envio
+            },
+            function (error) {
+              alert('Erro ao enviar o formulário: ' + error.text);
+            }
+          );
+      }
+    </script>
+    
+    
+  </body>
+</html>

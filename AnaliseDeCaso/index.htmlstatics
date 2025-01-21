@@ -14,7 +14,9 @@
   </head>
   <body>
     <header>
-      <img src="../images/LogoTransparente.png" alt="" />
+      <a href="https://fitaligner.com.br/" target="_blank">
+        <img src="https://fitaligner.com.br/images/LogoTransparente.png" alt="" />
+      </a>
       <div>
         <div>(11) 3090-6066</div>
         <div>@fitaligneroficial</div>
@@ -32,11 +34,14 @@
       >
         <div class="dados">
           <!-- Replace with your StaticForms accessKey -->
+          <!-- Daniel -->
           <!-- cba5a16d-4a65-410b-bdd4-99b0b5af66cb -->
+           <!-- fitAlign -->
+           <!-- cfa6b1a3-0569-48c1-ad7e-9e899c68a5e5 -->
           <input
             type="hidden"
             name="accessKey"
-            value="cfa6b1a3-0569-48c1-ad7e-9e899c68a5e5"
+            value="cba5a16d-4a65-410b-bdd4-99b0b5af66cb"
           />
           <input type="hidden" name="subject" value="Análise de Caso" />
 
@@ -57,6 +62,7 @@
             name="$Queixas Principais"
             placeholder="Queixa(s) principal (ais):"
           ></textarea>
+          <input type="file" name="$Anexo" >
         </div>
         <div class="radios">
           <div class="containerRadios">
@@ -320,5 +326,45 @@
         </div>
       </form>
     </main>
+
+    <!-- Modal -->
+    <div id="backdrop"></div>
+    <div id="modalConfirmacao">
+        <h2>Cadastro enviado com sucesso!</h2>
+        <button id="fecharModal">Fechar</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#staticform').on('submit', function (event) {
+                event.preventDefault(); // Impede o envio padrão do formulário
+                
+                // Obtém os dados do formulário
+                const formData = $(this).serialize();
+
+                // Envia os dados via AJAX
+                $.post('https://api.staticforms.xyz/submit', formData)
+                    .done(function (response) {
+                        if (response.success) {
+                            // Mostra o modal de confirmação
+                            $('#backdrop').fadeIn();
+                            $('#modalConfirmacao').fadeIn();
+                        } else {
+                            alert('Ocorreu um erro ao enviar o formulário.');
+                        }
+                    })
+                    .fail(function () {
+                        alert('Erro na conexão com o servidor.');
+                    });
+            });
+
+            // Fecha o modal
+            $('#fecharModal, #backdrop').on('click', function () {
+                $('#modalConfirmacao').fadeOut();
+                $('#backdrop').fadeOut();
+            });
+        });
+    </script>
   </body>
 </html>

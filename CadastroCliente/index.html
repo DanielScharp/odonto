@@ -1,73 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
     <header>
-        <img src="../images/LogoTransparente.png" alt="">
-        <div>
-            <div>(11) 3090-6066</div>
-            <div>@fitaligneroficial</div>
-            <div>São Paulo - SP</div>
-        </div>
+      <a href="https://fitaligner.com.br/" target="_blank">
+        <img
+          src="https://fitaligner.com.br/images/LogoTransparente.png"
+          alt=""
+        />
+      </a>
+      <div>
+        <div>(11) 3090-6066</div>
+        <div>@fitaligneroficial</div>
+        <div>São Paulo - SP</div>
+      </div>
     </header>
     <main>
-        <form action="https://api.staticforms.xyz/submit" method="post" id="staticform">
-            <div>
-                <!-- Replace with your StaticForms accessKey -->
-                <!-- cba5a16d-4a65-410b-bdd4-99b0b5af66cb -->
-                <input type="hidden" name="accessKey" value="cfa6b1a3-0569-48c1-ad7e-9e899c68a5e5">
-                <input type="hidden" name="subject" value="Cadastro de Cliente">
-          
-                <input type="text" name="$Nome completo" placeholder="Nome completo:" />
-                <input type="text" name="$CPF" placeholder="CPF:" />
-                <input type="text" name="$RG" placeholder="RG:" />
-                <input type="text" name="$Data de Nascimento" placeholder="Data de Nascimento:" />
-                <input type="text" name="$Telefone Celular" placeholder="Telefone Celular:" />
-                <input type="text" name="$E-mail" placeholder="E-mail:" />
-                <input type="text" name="$Rua" placeholder="Rua/Avenida/Travessa/Praça:" />
-                <input type="text" name="$Numero" placeholder="Número:" />
-                <input type="text" name="$Complemento" placeholder="Complemento:" />
-            </div>
-            
-            <div class="containerRadios">
-                <h3>Vencimento do boleto</h3>
-                <div>
-                  <input type="radio" name="$Vencimento do boleto" for="" value="Dia 01" />
-                  <label>Dia 01</label>
-                </div>
-                <div>
-                  <input type="radio" name="$Vencimento do boleto" for="" value="Dia 07" />
-                  <label>Dia 07</label>
-                </div>
-                <div>
-                  <input type="radio" name="$Vencimento do boleto" for="" value="Dia 10" />
-                  <label>Dia 10</label>
-                </div>
-                <div>
-                  <input type="radio" name="$Vencimento do boleto" for="" value="Dia 15" />
-                  <label>Dia 15</label>
-                </div>
-                <div>
-                  <input type="radio" name="$Vencimento do boleto" for="" value="Dia 21" />
-                  <label>Dia 21</label>
-                </div>
-                <div>
-                  <input type="radio" name="$Vencimento do boleto" for="" value="Dia 27" />
-                  <label>Dia 27</label>
-                </div>
-              </div>
-            <div class="btnEnviar" >
-                <button type="submit">ENVIAR</button>
-            </div>
-        </form>
-        </main>
-</body>
+      <h2>Cadastro - Cliente</h2>
+      <form
+        action="https://api.staticforms.xyz/submit"
+        method="post"
+        id="staticform"
+      >
+        <div>
+          <!-- Replace with your StaticForms accessKey -->
+          <!-- Daniel -->
+          <!-- cba5a16d-4a65-410b-bdd4-99b0b5af66cb -->
+          <!-- fitAlign -->
+          <!-- cfa6b1a3-0569-48c1-ad7e-9e899c68a5e5 -->
+          <input
+            type="hidden"
+            name="accessKey"
+            value="cfa6b1a3-0569-48c1-ad7e-9e899c68a5e5"
+          /><!--daniel-->
+          <input type="hidden" name="subject" value="Cadastro de Cliente" />
+
+          <input
+            type="text"
+            name="$Nome completo"
+            placeholder="Nome completo:"
+          />
+          <input type="text" name="$CPF" placeholder="CPF:" />
+          <input type="text" name="$RG" placeholder="RG:" />
+          <input
+            type="text"
+            name="$Data de Nascimento"
+            placeholder="Data de Nascimento:"
+          />
+          <input
+            type="text"
+            name="$Telefone Celular"
+            placeholder="Telefone Celular:"
+          />
+          <input type="text" name="$E-mail" placeholder="E-mail:" />
+          <input
+            type="text"
+            name="$Rua"
+            placeholder="Rua/Avenida/Travessa/Praça:"
+          />
+          <input type="text" name="$Numero" placeholder="Número:" />
+          <input type="text" name="$Complemento" placeholder="Complemento:" />
+        </div>
+
+        <div class="containerRadios">
+          <h3>Vencimento do boleto</h3>
+          <div>
+            <input
+              type="radio"
+              name="$Vencimento do boleto"
+              for=""
+              value="Dia 01"
+            />
+            <label>Dia 01</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              name="$Vencimento do boleto"
+              for=""
+              value="Dia 07"
+            />
+            <label>Dia 07</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              name="$Vencimento do boleto"
+              for=""
+              value="Dia 10"
+            />
+            <label>Dia 10</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              name="$Vencimento do boleto"
+              for=""
+              value="Dia 15"
+            />
+            <label>Dia 15</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              name="$Vencimento do boleto"
+              for=""
+              value="Dia 21"
+            />
+            <label>Dia 21</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              name="$Vencimento do boleto"
+              for=""
+              value="Dia 27"
+            />
+            <label>Dia 27</label>
+          </div>
+        </div>
+        <div class="btnEnviar">
+          <button type="submit">ENVIAR</button>
+        </div>
+      </form>
+    </main>
+    <!-- Modal -->
+    <div id="backdrop"></div>
+    <div id="modalConfirmacao">
+      <h2>Cadastro enviado com sucesso!</h2>
+      <button id="fecharModal">Fechar</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#staticform").on("submit", function (event) {
+          event.preventDefault(); // Impede o envio padrão do formulário
+
+          // Obtém os dados do formulário
+          const formData = $(this).serialize();
+
+          // Envia os dados via AJAX
+          $.post("https://api.staticforms.xyz/submit", formData)
+            .done(function (response) {
+              if (response.success) {
+                // Mostra o modal de confirmação
+                $("#backdrop").fadeIn();
+                $("#modalConfirmacao").fadeIn();
+              } else {
+                alert("Ocorreu um erro ao enviar o formulário.");
+              }
+            })
+            .fail(function () {
+              alert("Erro na conexão com o servidor.");
+            });
+        });
+
+        // Fecha o modal
+        $("#fecharModal, #backdrop").on("click", function () {
+          $("#modalConfirmacao").fadeOut();
+          $("#backdrop").fadeOut();
+        });
+      });
+    </script>
+  </body>
 </html>
